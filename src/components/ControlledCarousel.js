@@ -1,48 +1,40 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {Carousel} from 'react-bootstrap'
 
 function ControlledCarousel() {
     const [index, setIndex] = useState(0);
+    const [projectArray, setProjectArray] = useState([])
   
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
+
+    useEffect(() => {
+      fetch("http://localhost:3000/projects")
+      .then(res => res.json())
+      .then(projectData => {
+        setProjectArray(projectData)
+      })
+    }, [])
+
+    const projectArr = projectArray.map(projectObj => {
+      return (
+        <Carousel.Item key={projectObj.id}>
+          <img
+            className="d-block w-100"
+            src={projectObj.image}
+            alt={projectObj.name}
+          />
+          <Carousel.Caption>
+            <h3>More Info</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+      )
+    })
   
     return (
       <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://imgur.com/fe63t1z.png"
-            
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>More Info</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://imgur.com/WKBlKTF.png"
-            alt="Second slide"
-          />
-  
-          <Carousel.Caption>
-            <h3>More Info</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src=""
-            alt="Third slide"
-          />
-  
-          <Carousel.Caption>
-            <h3>More Info</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
+        {projectArr}
       </Carousel>
     );
   }
