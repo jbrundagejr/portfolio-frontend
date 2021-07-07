@@ -21,13 +21,13 @@ function About(){
             Brooklyn has to offer.</p>
         </div>
       </div>
-        <div id="aboutLinks">
-          <Resume />
-          <a className="bioLink" href="https://www.linkedin.com/in/jon-brundage-jr-869722164/" target="_blank" rel="noreferrer"><h3>LinkedIn</h3></a>
-          <a className="bioLink" href="https://github.com/jbrundagejr" target="_blank" rel="noreferrer"><h3>GitHub</h3></a>
-          <a className="bioLink" href="https://medium.com/me/stories/public" target="_blank" rel="noreferrer"><h3>Blogs</h3></a>
-          <a className="bioLink" href="https://twitter.com/BrundageJr" target="_blank" rel="noreferrer"><h3>Twitter</h3></a>
-        </div>
+      <div id="aboutLinks">
+      <Resume />
+        <a className="bioLink" href="https://www.linkedin.com/in/jon-brundage-jr-869722164/" target="_blank" rel="noreferrer"><h3>LinkedIn</h3></a>
+        <a className="bioLink" href="https://github.com/jbrundagejr" target="_blank" rel="noreferrer"><h3>GitHub</h3></a>
+        <a className="bioLink" href="https://medium.com/me/stories/public" target="_blank" rel="noreferrer"><h3>Blogs</h3></a>
+        <a className="bioLink" href="https://twitter.com/BrundageJr" target="_blank" rel="noreferrer"><h3>Twitter</h3></a>
+      </div>
     </div>
   )
 }
