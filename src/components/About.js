@@ -3,7 +3,7 @@ import Resume from './Resume'
 
 function About(){
   return (
-    <div id="aboutContainer">
+    <div id="aboutContainer" className="fadeIn">
       <h2>About Jon</h2>
       <div id="aboutContent">
         <div id="bioPhoto">

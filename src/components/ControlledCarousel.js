@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import {Carousel} from 'react-bootstrap'
+import ProjectModal from './ProjectModal'
 
 function ControlledCarousel() {
     const [index, setIndex] = useState(0);
@@ -26,7 +27,7 @@ function ControlledCarousel() {
             alt={projectObj.name}
           />
           <Carousel.Caption>
-            <h3>More Info</h3>
+            <ProjectModal id={projectObj.id}/>
           </Carousel.Caption>
         </Carousel.Item>
       )
