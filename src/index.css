@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(9, 155, 130);
+  background-color: rgb(209, 209, 209);
 }
 
 h1 {
@@ -20,9 +20,26 @@ h2 {
   font-style: normal;
 }
 
+h3 {
+  font-size: 2em;
+  font-family: novecento-sans, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h3:hover {
+  cursor: pointer;
+  color: rgb(9, 155, 130);
+}
+
+p {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 1.16em;
+}
+
 #navContainer {
   display: flex;
-  background-color: white;
+  background-color: rgb(209, 209, 209);
   align-items: center;
   justify-content: space-around;
   height: 7em;
@@ -42,6 +59,7 @@ h2 {
 
 .headerLink:hover {
   text-decoration: underline;
+  color:rgb(9, 155, 130)
 }
 
 #welcomeContainer {
@@ -56,17 +74,52 @@ h2 {
   margin: 0 20%;
 }
 
+#aboutContent {
+  display: flex;
+}
+
+#bioBlurb {
+  width: 50%;
+  padding-left: 10px;
+}
+
+#aboutLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+}
+
+.bioLink {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: black;
+  padding-top: 10px;
+}
+
+#resumeTrigger {
+  padding-top: 10px;
+}
+
 #contactContainer {
   margin: 0 20%;
 }
 
 #footerContainer {
   display: flex;
-  background-color: white;
+  background-color: rgb(209, 209, 209);
   align-items: center;
   justify-content: space-around;
   height: 7em;
   bottom: 0;
   position: fixed;
   width: 100%;
+}
+
+a.footerLink {
+  color: black;
+}
+
+a.footerLink:hover {
+  color:rgb(9, 155, 130)
 }
