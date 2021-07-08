@@ -50,23 +50,23 @@ function Contact(){
     <div id="contactContainer" className="fadeIn">
       <h2>Contact</h2>
       <div id="contactBlurb">
-        <p>Please feel free to reach out if you have any development needs. I will get back to you as soon as I can, and thank you in advance for your interest!</p>
+        <p>Please feel free to reach out if you have any questions or development needs. I will get back to you as soon as I can, and thank you in advance for your interest!</p>
       </div>
       <Form onClick={handleEmailSubmit}>
         <Form.Field required>
-          <label>Name</label>
+          <label className="formLabel">Name</label>
           <Input placeholder='Your name' value={userName} onChange={whatUserNamed}/>
         </Form.Field>
         <Form.Field required>
-          <label>Email</label>
+          <label className="formLabel">Email</label>
           <Input placeholder='Your Email' value={userEmail} onChange={whatUserEmailed} />
         </Form.Field>
         <Form.Field required>
-          <label>Subject</label>
+          <label className="formLabel">Subject</label>
           <Input placeholder='Email Subject' value={userSubject} onChange={whatUserSubjected} />
         </Form.Field>
         <Form.Field required>
-          <label>Message</label>
+          <label className="formLabel">Message</label>
           <Input placeholder='Your Message' value={userMessage} onChange={whatUserMessaged} />
         </Form.Field>
       </Form>

@@ -26,23 +26,35 @@ function ProjectModal({id}){
     )
   } else {
 
-    const {name, image, blurb, demo_link, github_link} = project
+    const {name, image, blurb, demo_link, github_link, backend_repo, made_with} = project
 
+    const iconKeys = made_with.split(", ")
+    const iconArray = iconKeys.map(icon => {
+      return (
+        <i key={icon.id} className={icon} id="devIcon"></i>
+      )
+    })
     return (
       <div>
-        <Modal 
+        <Modal
+          id="projectModal"
           onClose={() => setOpen(false)}
           onOpen={() => setOpen(true)}
           open={open}
           trigger={<h3>More Info</h3>}
         >
-          <Header>{name}</Header>
+          <Header><h2>{name}</h2></Header>
           <Modal.Content image>
-            <Image size = "medium" src={image} alt={name} wrapped />
+            <Image size="large" src={image} alt={name} wrapped />
             <Modal.Description>
               <p>{blurb}</p>
-              <a href={demo_link} target="_blank" rel="noreferrer">Demo</a>
-              <a href={github_link} target="_blank" rel="noreferrer">GitHub Repo</a>
+              <h4>Made With:</h4>
+              {iconArray}
+              <div id="modalLinkContainer">
+                <a className="modalLink" href={demo_link} target="_blank" rel="noreferrer">Demo</a>
+                <a className="modalLink" href={github_link} target="_blank" rel="noreferrer">Frontend Repo</a>
+                <a className="modalLink" href={backend_repo} target="_blank" rel="noreferrer">Backend Repo</a>
+              </div>
             </Modal.Description>
           </Modal.Content>
         </Modal>

@@ -1,5 +1,5 @@
 import {Image} from 'semantic-ui-react'
-import Resume from './Resume'
+import resume from '../BrundageResume.pdf'
 
 function About(){
   return (
@@ -10,9 +10,9 @@ function About(){
           <Image size = "large" src="https://imgur.com/5VyETe1.jpg" alt="Jon Brundage Jr."></Image>
         </div>
         <div id="bioBlurb">
-          <p>As a graduate of the Flatiron School of Software Engineering in June 2021, Jon found a passion for coding and web design.
-            Specializing in React and Ruby on Rails, Jon is a full-stack engineer with an ability to quickly learn new concepts and implement
-            efficient coding to solve problems. </p>
+          <p>A graduate of the Flatiron School of Software Engineering in June 2021, Jon realized his passion for coding and web design very 
+            early on in the program. Specializing in React and Ruby on Rails, Jon is a full-stack engineer with an ability to quickly learn new concepts and implement
+            efficient coding to solve problems.</p>
           <p>Before getting into coding, Jon worked in television production as a freelance Director of Photography and Camera Operator 
              for over thirteen years. He has shot for numerous networks including HBO, AMC, NatGeo, and Comedy Central among others. 
              In his capacity as Director of Photography, Jon cultivated team management skills, and heavily relied on his innate ability to lead.</p>
@@ -22,7 +22,7 @@ function About(){
         </div>
       </div>
       <div id="aboutLinks">
-      <Resume />
+        <a className="bioLink" href={resume} target="_blank" rel="noreferrer"><h3>Resume</h3></a>
         <a className="bioLink" href="https://www.linkedin.com/in/jon-brundage-jr-869722164/" target="_blank" rel="noreferrer"><h3>LinkedIn</h3></a>
         <a className="bioLink" href="https://github.com/jbrundagejr" target="_blank" rel="noreferrer"><h3>GitHub</h3></a>
         <a className="bioLink" href="https://medium.com/me/stories/public" target="_blank" rel="noreferrer"><h3>Blogs</h3></a>
