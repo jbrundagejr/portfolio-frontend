@@ -215,9 +215,10 @@ a.footerLink:hover {
 .modalLink {
   font-family: novecento-sans, sans-serif;
   color: black;
-  font-size: 2em;
+  font-size: 1.5em;
   text-decoration: none;
   padding-right: 10px;
+  padding-top: 15px;
 }
 
 .modalLink:hover {
