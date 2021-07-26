@@ -4,9 +4,6 @@ function Footer(){
   return (
     <div id="footerContainer">
       <div>
-        <h2>Jon Brundage Jr. | Brooklyn, NY </h2>
-      </div>
-      <div>
         <a className="footerLink" href="https://www.linkedin.com/in/jon-brundage-jr-869722164/" target="_blank" rel="noreferrer">
           <Icon size="big" name='linkedin' /></a>
         <a className="footerLink" href="https://github.com/jbrundagejr" target="_blank" rel="noreferrer">

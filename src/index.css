@@ -1,12 +1,10 @@
-body {
-  background-color: rgb(209, 209, 209);
-}
-
 h1 {
-  font-size: 4em;
-  font-family: novecento-sans-wide, sans-serif;
-  font-weight: 700;
+  font-family: sofia-pro,sans-serif;
+  font-weight: 900;
   font-style: normal;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: .1px black;
+  font-size: 10em;
 }
 
 h1:hover {
@@ -14,15 +12,17 @@ h1:hover {
 }
 
 h2 {
-  font-size: 2em;
-  font-family: novecento-sans, sans-serif;
-  font-weight: 200;
+  font-family: sofia-pro,sans-serif;
+  font-weight: 900;
   font-style: normal;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: .1px black;
+  font-size: 4em;
 }
 
 h3 {
   font-size: 2em;
-  font-family: novecento-sans, sans-serif;
+  font-family: sofia-pro,sans-serif;
   font-weight: 200;
   font-style: normal;
 }
@@ -35,11 +35,13 @@ h3:hover {
 
 h4 {
   font-size: 2em;
-  font-family: novecento-sans, sans-serif;
+  font-family: sofia-pro, sans-serif;
 }
 
 p {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: sofia-pro,sans-serif;
+  font-weight: 200;
+  font-style: normal;
   font-size: 1.16em;
 }
 
@@ -84,10 +86,9 @@ p {
 
 #navContainer {
   display: flex;
-  background-color: rgb(209, 209, 209);
-  align-items: center;
-  justify-content: space-around;
-  height: 7em;
+  background-color: white;
+  height: 4em;
+  margin: 0 20%;
 }
 
 .headerLink {
@@ -97,8 +98,8 @@ p {
   padding-right: 5px;
   color: black;
   text-decoration: none;
-  font-family: novecento-sans, sans-serif;
-  font-weight: 200;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -112,7 +113,7 @@ p {
 
 }
 
-div#photoContainer {
+/* div#photoContainer {
   display: flex;
   padding-top: 10%;
   text-align: center;
@@ -122,7 +123,7 @@ div#photoContainer {
   background-size: 100%;
   background-image: url("https://imgur.com/XTu1dM2.jpg");
   background-repeat: no-repeat;
-}
+} */
 
 #welcomeBlurb {
   font-family: 'Nanum Myeongjo', serif;
@@ -182,10 +183,10 @@ div#photoContainer {
 
 #footerContainer {
   display: flex;
-  background-color: rgb(209, 209, 209);
+  background-color: white;
   align-items: center;
-  justify-content: space-around;
-  height: 7em;
+  justify-content: flex-end;
+  height: 4em;
   bottom: 0;
   position: fixed;
   width: 100%;

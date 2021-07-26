@@ -1,10 +1,10 @@
 import {Image} from 'semantic-ui-react'
-import resume from '../BrundageResume.pdf'
+import resume from '../JBrundageJrResume.pdf'
 
 function About(){
   return (
     <div id="aboutContainer" className="fadeIn">
-      <h2>About Jon</h2>
+      <h2>About.</h2>
       <div id="aboutContent">
         <div id="bioPhoto">
           <Image size = "large" src="https://imgur.com/5VyETe1.jpg" alt="Jon Brundage Jr."></Image>
@@ -19,14 +19,8 @@ function About(){
           <p>In his spare time, Jon can be found playing hockey, attempting the crossword, or going for a family jog with his wife and son. 
             He's been living in Crown Heights since moving to Brooklyn in 2008 and thoroughly enjoys all the adventures that 
             Brooklyn has to offer.</p>
+          <p>View Jon's resume <a href={resume} target="_blank" rel="noreferrer">here</a>.</p>
         </div>
-      </div>
-      <div id="aboutLinks">
-        <a className="bioLink" href={resume} target="_blank" rel="noreferrer"><h3>Resume</h3></a>
-        <a className="bioLink" href="https://www.linkedin.com/in/jon-brundage-jr-869722164/" target="_blank" rel="noreferrer"><h3>LinkedIn</h3></a>
-        <a className="bioLink" href="https://github.com/jbrundagejr" target="_blank" rel="noreferrer"><h3>GitHub</h3></a>
-        <a className="bioLink" href="https://medium.com/me/stories/public" target="_blank" rel="noreferrer"><h3>Blogs</h3></a>
-        <a className="bioLink" href="https://twitter.com/BrundageJr" target="_blank" rel="noreferrer"><h3>Twitter</h3></a>
       </div>
     </div>
   )
