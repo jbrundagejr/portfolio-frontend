@@ -35,9 +35,11 @@ function ControlledCarousel() {
     })
   
     return (
-      <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-        {projectArr}
-      </Carousel>
+      <div id="carouselContainer">
+        <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
+          {projectArr}
+        </Carousel>
+      </div>
     );
   }
   

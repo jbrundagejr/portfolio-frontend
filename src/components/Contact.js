@@ -53,6 +53,7 @@ function Contact(){
   return (
     <div id="contactContainer" className="fadeIn">
       <h2>Contact.</h2>
+      <div id="contactContent">
       <div id="contactBlurb">
         <p>Please feel free to reach out if you have any questions or development needs. I will get back to you as soon as I can, and thank you in advance for your interest!</p>
       </div>
@@ -75,6 +76,7 @@ function Contact(){
         </Form.Field>
         <Button>Send Email</Button>
       </Form> }
+      </div>
     </div>
   )
 }

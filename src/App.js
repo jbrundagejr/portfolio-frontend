@@ -10,20 +10,21 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div>
+      <Header />
       <Switch>
         <Route exact path = "/">
           <Welcome />
         </Route>
         <Route exact path = "/about">
-          <Header />
+          
           <About />
         </Route>
         <Route exact path = "/projects">
-          <Header />
+          
           <Projects />
         </Route>
         <Route exact path = "/contact">
-          <Header />
+          
           <Contact />
         </Route>
       </Switch>

@@ -39,7 +39,7 @@ p {
   font-family: sofia-pro,sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 .fadeIn {
@@ -81,10 +81,14 @@ p {
   }
 }
 
+i.icon, i.icons {
+  font-size: 2em;
+}
+
 #navContainer {
   display: flex;
   background-color: white;
-  height: 4em;
+  height: 5em;
   margin: 0 20%;
   align-items: center;
   justify-content: flex-end;
@@ -112,13 +116,25 @@ p {
   margin: 0 20%;
 }
 
+#welcomeNote{
+  padding-top: 4em;
+  padding-bottom: 4em;
+  font-size: 1.5em;
+}
+
 #welcomeNav {
   display: flex;
   flex-direction: column;
+  border-top: thin black;
 }
 
 #projectContainer {
   margin: 0 20%;
+}
+
+#carouselContainer{
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 #aboutContainer {
@@ -128,6 +144,8 @@ p {
 #aboutContent {
   display: flex;
   justify-content: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
 }
 
 #bioBlurb {
@@ -154,12 +172,14 @@ p {
 }
 
 #resumeLink{
-  color: rgb(20, 176, 238)
+  font-weight: 600;
+  color: black;
 }
 
 #resumeLink:hover {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: .75px black;
   text-decoration: none;
-  color: black;
 }
 
 #contactContainer {
@@ -178,6 +198,11 @@ p {
 
 #contactBlurb{
   font-size: 1.5em;
+}
+
+#contactContent{
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 #emailConfirmation{
