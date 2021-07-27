@@ -1,12 +1,7 @@
-import {NavLink, useHistory} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import {Dropdown} from 'semantic-ui-react'
 
 function Header(){
-  const history = useHistory()
-
-  function handleHomeClick(){
-    history.push('/')
-  }
 
   return (
     <div id="navContainer">

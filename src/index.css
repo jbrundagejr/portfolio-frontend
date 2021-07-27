@@ -3,12 +3,8 @@ h1 {
   font-weight: 900;
   font-style: normal;
   -webkit-text-fill-color: white;
-  -webkit-text-stroke: .1px black;
+  -webkit-text-stroke: 1px black;
   font-size: 10em;
-}
-
-h1:hover {
-  cursor: pointer;
 }
 
 h2 {
@@ -16,21 +12,22 @@ h2 {
   font-weight: 900;
   font-style: normal;
   -webkit-text-fill-color: white;
-  -webkit-text-stroke: .1px black;
+  -webkit-text-stroke: 1px black;
   font-size: 4em;
 }
 
 h3 {
   font-size: 2em;
   font-family: sofia-pro,sans-serif;
-  font-weight: 200;
+  font-weight: 700;
   font-style: normal;
+  color: black;
 }
 
 h3:hover {
   cursor: pointer;
-  color: rgb(9, 155, 130);
-  text-decoration: none;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1px black;
 }
 
 h4 {
@@ -42,7 +39,7 @@ p {
   font-family: sofia-pro,sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 1.16em;
+  font-size: 1em;
 }
 
 .fadeIn {
@@ -89,6 +86,8 @@ p {
   background-color: white;
   height: 4em;
   margin: 0 20%;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .headerLink {
@@ -104,32 +103,18 @@ p {
 }
 
 .headerLink:hover {
-  color:rgb(9, 155, 130);
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: .75px black;
   text-decoration: none;
 }
 
 #welcomeContainer {
   margin: 0 20%;
-
 }
 
-/* div#photoContainer {
+#welcomeNav {
   display: flex;
-  padding-top: 10%;
-  text-align: center;
-  align-content: center;
   flex-direction: column;
-  height: 100vh;
-  background-size: 100%;
-  background-image: url("https://imgur.com/XTu1dM2.jpg");
-  background-repeat: no-repeat;
-} */
-
-#welcomeBlurb {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 2em;
-  text-align: center;
-  color: white;
 }
 
 #projectContainer {
@@ -168,8 +153,13 @@ p {
   color: rgb(9, 155, 130);
 }
 
-#resumeTrigger {
-  padding-top: 10px;
+#resumeLink{
+  color: rgb(20, 176, 238)
+}
+
+#resumeLink:hover {
+  text-decoration: none;
+  color: black;
 }
 
 #contactContainer {
@@ -177,19 +167,32 @@ p {
 }
 
 .formLabel {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: sofia-pro, sans-serif;
   font-size: 1.2em;
+  padding-top: 10px;
+}
+
+.placeHolder{
+  font-family: sofia-pro,sans-serif;
+}
+
+#contactBlurb{
+  font-size: 1.5em;
+}
+
+#emailConfirmation{
+  font-size: 1.5em;
+  padding-top: 15px;
 }
 
 #footerContainer {
   display: flex;
-  background-color: white;
   align-items: center;
   justify-content: flex-end;
   height: 4em;
   bottom: 0;
-  position: fixed;
-  width: 100%;
+  margin: 0 20%;
+  /* position: fixed; */
 }
 
 a.footerLink {
@@ -197,7 +200,9 @@ a.footerLink {
 }
 
 a.footerLink:hover {
-  color:rgb(9, 155, 130)
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: .75px black;
+  text-decoration: none;
 }
 
 .ui.modal {
@@ -205,16 +210,17 @@ a.footerLink:hover {
   height: auto;
 }
 
-.ui.modal>.content {
+/* .ui.modal>.content {
   background-color: rgb(209, 209, 209);
 }
 
 .ui.modal>.header {
   background-color: rgb(209, 209, 209);
-}
+} */
 
 .modalLink {
-  font-family: novecento-sans, sans-serif;
+  font-family: sofia-pro,sans-serif;
+  font-weight: 700;
   color: black;
   font-size: 1.5em;
   text-decoration: none;
@@ -223,7 +229,9 @@ a.footerLink:hover {
 }
 
 .modalLink:hover {
-  color: rgb(9, 155, 130);
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: .75px black;
+  text-decoration: none;
 }
 
 #modalLinkContainer {

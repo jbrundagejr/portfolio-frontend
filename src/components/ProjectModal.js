@@ -51,9 +51,9 @@ function ProjectModal({id}){
               <h4>Made With:</h4>
               {iconArray}
               <div id="modalLinkContainer">
-                <a className="modalLink" href={demo_link} target="_blank" rel="noreferrer">Demo</a>
-                <a className="modalLink" href={github_link} target="_blank" rel="noreferrer">Frontend Repo</a>
-                <a className="modalLink" href={backend_repo} target="_blank" rel="noreferrer">Backend Repo</a>
+                {demo_link ? <a className="modalLink" href={demo_link} target="_blank" rel="noreferrer">Demo</a> : null}
+                {github_link ? <a className="modalLink" href={github_link} target="_blank" rel="noreferrer">Frontend Repo</a> : null}
+                {backend_repo ? <a className="modalLink" href={backend_repo} target="_blank" rel="noreferrer">Backend Repo</a> : null}
               </div>
             </Modal.Description>
           </Modal.Content>

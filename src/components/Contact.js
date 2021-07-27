@@ -1,13 +1,12 @@
 import {useState} from 'react'
-import {Form, Input} from 'semantic-ui-react'
-import {useHistory} from 'react-router-dom'
+import {Form, Input, Button} from 'semantic-ui-react'
 
 function Contact(){
   const [userName, setUserName] = useState("")
   const [userEmail, setUserEmail] = useState("")
   const [userSubject, setUserSubject] = useState("")
   const [userMessage, setUserMessage] = useState("")
-  const history = useHistory()
+  const [successEmail, setSuccessEmail] = useState("")
 
   function whatUserNamed(e){
     setUserName(e.target.value)
@@ -29,11 +28,11 @@ function Contact(){
     e.preventDefault()
     const newEmail = {
       name: userName,
-      address: userEmail,
+      email_address: userEmail,
       subject: userSubject,
       message: userMessage
     }
-    fetch(`http://localhost:4000/emails`, {
+    fetch(`http://localhost:3000/emails`, {
       method: "POST",
       headers: {
         "content-type": "application/json"
@@ -41,8 +40,13 @@ function Contact(){
       body: JSON.stringify(newEmail)
     })
      .then(res => res.json())
-     .then(
-       history.push("/")
+     .then(resp => {
+       setSuccessEmail(resp)
+       setUserName("")
+       setUserEmail("")
+       setUserSubject("")
+       setUserMessage("")
+       }
      )
   }
 
@@ -52,24 +56,25 @@ function Contact(){
       <div id="contactBlurb">
         <p>Please feel free to reach out if you have any questions or development needs. I will get back to you as soon as I can, and thank you in advance for your interest!</p>
       </div>
-      <Form onClick={handleEmailSubmit}>
+      {successEmail ? <p id="emailConfirmation" className="fadeIn">Thanks for emailing me. I'll get back to you shortly!</p> : <Form onSubmit={handleEmailSubmit}>
         <Form.Field required>
           <label className="formLabel">Name</label>
-          <Input placeholder='Your name' value={userName} onChange={whatUserNamed}/>
+          <Input className="placeHolder" required placeholder='Your name' value={userName} onChange={whatUserNamed}/>
         </Form.Field>
         <Form.Field required>
           <label className="formLabel">Email</label>
-          <Input placeholder='Your Email' value={userEmail} onChange={whatUserEmailed} />
+          <Input className="placeHolder" required type="email" placeholder='Your Email Address' value={userEmail} onChange={whatUserEmailed} />
         </Form.Field>
         <Form.Field required>
           <label className="formLabel">Subject</label>
-          <Input placeholder='Email Subject' value={userSubject} onChange={whatUserSubjected} />
+          <Input className="placeHolder" required placeholder='Email Subject' value={userSubject} onChange={whatUserSubjected} />
         </Form.Field>
         <Form.Field required>
           <label className="formLabel">Message</label>
-          <Input placeholder='Your Message' value={userMessage} onChange={whatUserMessaged} />
+          <Input className="placeHolder" required placeholder='Your Message' value={userMessage} onChange={whatUserMessaged} />
         </Form.Field>
-      </Form>
+        <Button>Send Email</Button>
+      </Form> }
     </div>
   )
 }

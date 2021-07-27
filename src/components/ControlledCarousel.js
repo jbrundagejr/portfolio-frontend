@@ -20,16 +20,17 @@ function ControlledCarousel() {
 
     const projectArr = projectArray.map(projectObj => {
       return (
-        <Carousel.Item key={projectObj.id}>
-          <img
-            className="d-block w-100"
-            src={projectObj.image}
-            alt={projectObj.name}
-          />
-          <Carousel.Caption>
-            <ProjectModal id={projectObj.id}/>
-          </Carousel.Caption>
-        </Carousel.Item>
+          <Carousel.Item key={projectObj.id}>
+            <img
+              className="d-block w-100"
+              src={projectObj.image}
+              alt={projectObj.name}
+            />
+            <Carousel.Caption>
+              <ProjectModal id={projectObj.id}/>
+            </Carousel.Caption>
+          </Carousel.Item>
+        
       )
     })
   
