@@ -192,7 +192,7 @@ i.icon, i.icons {
   padding-top: 10px;
 }
 
-.placeHolder{
+.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url] {
   font-family: sofia-pro,sans-serif;
 }
 
@@ -208,6 +208,10 @@ i.icon, i.icons {
 #emailConfirmation{
   font-size: 1.5em;
   padding-top: 15px;
+}
+
+.ui.button {
+  font-family: sofia-pro, sans-serif;
 }
 
 #footerContainer {

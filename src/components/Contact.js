@@ -54,28 +54,33 @@ function Contact(){
     <div id="contactContainer" className="fadeIn">
       <h2>Contact.</h2>
       <div id="contactContent">
-      <div id="contactBlurb">
-        <p>Please feel free to reach out if you have any questions or development needs. I will get back to you as soon as I can, and thank you in advance for your interest!</p>
-      </div>
-      {successEmail ? <p id="emailConfirmation" className="fadeIn">Thanks for emailing me. I'll get back to you shortly!</p> : <Form onSubmit={handleEmailSubmit}>
-        <Form.Field required>
-          <label className="formLabel">Name</label>
-          <Input className="placeHolder" required placeholder='Your name' value={userName} onChange={whatUserNamed}/>
-        </Form.Field>
-        <Form.Field required>
-          <label className="formLabel">Email</label>
-          <Input className="placeHolder" required type="email" placeholder='Your Email Address' value={userEmail} onChange={whatUserEmailed} />
-        </Form.Field>
-        <Form.Field required>
-          <label className="formLabel">Subject</label>
-          <Input className="placeHolder" required placeholder='Email Subject' value={userSubject} onChange={whatUserSubjected} />
-        </Form.Field>
-        <Form.Field required>
-          <label className="formLabel">Message</label>
-          <Input className="placeHolder" required placeholder='Your Message' value={userMessage} onChange={whatUserMessaged} />
-        </Form.Field>
-        <Button>Send Email</Button>
-      </Form> }
+        {successEmail ? 
+        <p id="emailConfirmation" className="fadeIn">Thanks for emailing me. I'll get back to you shortly!</p> : 
+        <div>
+          <div id="contactBlurb">
+            <p>Please feel free to reach out if you have any questions or development needs. I will get back to you as soon as I can, and thank you in advance for your interest!</p>
+          </div>
+          <Form onSubmit={handleEmailSubmit}>
+            <Form.Field required>
+              <label className="formLabel">Name</label>
+              <Input required placeholder='Your name' value={userName} onChange={whatUserNamed}/>
+            </Form.Field>
+            <Form.Field required>
+              <label className="formLabel">Email</label>
+              <Input required type="email" placeholder='Your Email Address' value={userEmail} onChange={whatUserEmailed} />
+            </Form.Field>
+            <Form.Field required>
+              <label className="formLabel">Subject</label>
+              <Input required placeholder='Email Subject' value={userSubject} onChange={whatUserSubjected} />
+            </Form.Field>
+            <Form.Field required>
+              <label className="formLabel">Message</label>
+              <Input required placeholder='Your Message' value={userMessage} onChange={whatUserMessaged} />
+            </Form.Field>
+            <Button>Send Email</Button>
+          </Form>
+        </div>
+        }
       </div>
     </div>
   )
