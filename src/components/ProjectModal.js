@@ -41,8 +41,8 @@ function ProjectModal({id}){
           onClose={() => setOpen(false)}
           onOpen={() => setOpen(true)}
           open={open}
-          trigger={<h3>More Info</h3>}
           key={id}
+          trigger={id%2 ? <h3 id="modalHeaderOdd">More Info</h3> : <h3>More Info</h3>}
         >
           <Header><h2>{name}</h2></Header>
           <Modal.Content image>

@@ -30,6 +30,10 @@ h3:hover {
   -webkit-text-stroke: 1px black;
 }
 
+#modalHeaderOdd {
+  color: white;
+}
+
 h4 {
   font-size: 2em;
   font-family: sofia-pro, sans-serif;

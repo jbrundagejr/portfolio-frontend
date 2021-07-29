@@ -3,7 +3,7 @@ import {Icon} from 'semantic-ui-react'
 function Footer(){
   return (
     <div id="footerContainer" className="fadeIn">
-        <a className="footerLink" href="https://www.linkedin.com/in/jon-brundage-jr-869722164/" target="_blank" rel="noreferrer">
+        <a className="footerLink" href="https://www.linkedin.com/in/jbrundagejr/" target="_blank" rel="noreferrer">
           <Icon size="big" name='linkedin' /></a>
         <a className="footerLink" href="https://github.com/jbrundagejr" target="_blank" rel="noreferrer">
           <Icon size="big" name='github' /></a>
