@@ -10,6 +10,7 @@ function ProjectModal({id}){
     fetch(`http://localhost:3000/projects/${id}`)
       .then(res => res.json())
       .then(projectData => {
+        console.log(projectData)
         setProject(projectData)
         setIsLoaded(true)
       })
@@ -26,7 +27,7 @@ function ProjectModal({id}){
     )
   } else {
 
-    const {name, image, blurb, link, demo_link, github_link, backend_repo, made_with} = project
+    const {id, name, image, blurb, demo_link, github_link, backend_repo, made_with, link} = project
 
     const iconArray = made_with.split(", ").map(icon => {
       return (
@@ -41,6 +42,7 @@ function ProjectModal({id}){
           onOpen={() => setOpen(true)}
           open={open}
           trigger={<h3>More Info</h3>}
+          key={id}
         >
           <Header><h2>{name}</h2></Header>
           <Modal.Content image>
