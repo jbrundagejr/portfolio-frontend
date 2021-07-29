@@ -26,10 +26,9 @@ function ProjectModal({id}){
     )
   } else {
 
-    const {name, image, blurb, demo_link, github_link, backend_repo, made_with} = project
+    const {name, image, blurb, link, demo_link, github_link, backend_repo, made_with} = project
 
-    const iconKeys = made_with.split(", ")
-    const iconArray = iconKeys.map(icon => {
+    const iconArray = made_with.split(", ").map(icon => {
       return (
         <i key={icon.id} className={icon} id="devIcon"></i>
       )
@@ -51,6 +50,7 @@ function ProjectModal({id}){
               <h4>Made With:</h4>
               {iconArray}
               <div id="modalLinkContainer">
+                {link ? <a className="modalLink" href={link} target="_blank" rel="noreferrer">Website</a> : null}
                 {demo_link ? <a className="modalLink" href={demo_link} target="_blank" rel="noreferrer">Demo</a> : null}
                 {github_link ? <a className="modalLink" href={github_link} target="_blank" rel="noreferrer">Frontend Repo</a> : null}
                 {backend_repo ? <a className="modalLink" href={backend_repo} target="_blank" rel="noreferrer">Backend Repo</a> : null}

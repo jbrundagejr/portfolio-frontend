@@ -16,15 +16,12 @@ function App() {
           <Welcome />
         </Route>
         <Route exact path = "/about">
-          
           <About />
         </Route>
         <Route exact path = "/projects">
-          
           <Projects />
         </Route>
         <Route exact path = "/contact">
-          
           <Contact />
         </Route>
       </Switch>
