@@ -10,7 +10,6 @@ function ProjectModal({id}){
     fetch(`http://localhost:3000/projects/${id}`)
       .then(res => res.json())
       .then(projectData => {
-        console.log(projectData)
         setProject(projectData)
         setIsLoaded(true)
       })
@@ -37,7 +36,6 @@ function ProjectModal({id}){
     return (
       <div>
         <Modal
-          id="projectModal"
           onClose={() => setOpen(false)}
           onOpen={() => setOpen(true)}
           open={open}
