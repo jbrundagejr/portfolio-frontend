@@ -7,7 +7,7 @@ function ProjectModal({id}){
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    fetch(`https://mighty-fjord-51024.herokuapp.com/${id}`)
+    fetch(`https://mighty-fjord-51024.herokuapp.com/projects/${id}`)
       .then(res => res.json())
       .then(projectData => {
         setProject(projectData)
