@@ -147,13 +147,13 @@ i.icon, i.icons {
 
 #aboutContent {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 2em;
   padding-top: 2em;
 }
 
 #bioBlurb {
-  width: 50%;
+  width: 60%;
   padding-left: 10px;
 }
 
