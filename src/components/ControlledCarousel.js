@@ -11,7 +11,7 @@ function ControlledCarousel() {
     };
 
     useEffect(() => {
-      fetch("http://localhost:3000/projects")
+      fetch("https://mighty-fjord-51024.herokuapp.com/projects")
       .then(res => res.json())
       .then(projectData => {
         setProjectArray(projectData)

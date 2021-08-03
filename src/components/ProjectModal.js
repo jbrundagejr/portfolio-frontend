@@ -7,7 +7,7 @@ function ProjectModal({id}){
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    fetch(`http://localhost:3000/projects/${id}`)
+    fetch(`https://mighty-fjord-51024.herokuapp.com/${id}`)
       .then(res => res.json())
       .then(projectData => {
         setProject(projectData)
@@ -40,7 +40,7 @@ function ProjectModal({id}){
           onOpen={() => setOpen(true)}
           open={open}
           key={id}
-          trigger={id%2 ? <h3 id="modalHeaderOdd">More Info</h3> : <h3>More Info</h3>}
+          trigger={(id === 14) ? <h3 id="modalHeaderOdd">More Info</h3> : <h3>More Info</h3>}
         >
           <Header><h2>{name}</h2></Header>
           <Modal.Content image>

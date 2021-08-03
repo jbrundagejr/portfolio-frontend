@@ -32,7 +32,7 @@ function Contact(){
       subject: userSubject,
       message: userMessage
     }
-    fetch(`http://localhost:3000/emails`, {
+    fetch(`https://mighty-fjord-51024.herokuapp.com/emails`, {
       method: "POST",
       headers: {
         "content-type": "application/json"
