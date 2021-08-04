@@ -47,6 +47,8 @@ p {
 }
 
 .fadeIn {
+  min-width: 60%;
+  min-height: 400px;
   animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
