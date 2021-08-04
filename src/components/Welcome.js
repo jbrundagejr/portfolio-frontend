@@ -3,7 +3,7 @@ function Welcome(){
     <div id="welcomeContainer" className="fadeIn">
       <h1>Jon</h1>
       <h1>Brundage Jr.</h1>
-      <p id="welcomeNote">Real. American. Cheese.</p>
+      <p id="welcomeNote">Software Engineer. Problem Solver. Life-long Learner.</p>
     </div>
   )
 }
