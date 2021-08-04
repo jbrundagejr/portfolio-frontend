@@ -40,7 +40,7 @@ function ProjectModal({id}){
           onOpen={() => setOpen(true)}
           open={open}
           key={id}
-          trigger={(id === 17) ? <h3 id="modalHeaderOdd">More Info</h3> : <h3>More Info</h3>}
+          trigger={(id === 21) ? <h3 id="modalHeaderOdd">More Info</h3> : <h3>More Info</h3>}
         >
           <Header><h2>{name}</h2></Header>
           <Modal.Content image>
