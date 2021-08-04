@@ -19,7 +19,7 @@ function About(){
           <p>In his spare time, Jon can be found playing hockey, attempting the crossword, or going for a family jog with his wife and son. 
             He's been living in Crown Heights since moving to Brooklyn in 2008 and thoroughly enjoys all the adventures that 
             Brooklyn has to offer.</p>
-          <p>You can view Jon's resume <a id="resumeLink" href={resume} target="_blank" rel="noreferrer">here</a>.</p>
+          <a id="resumeLink" href={resume} target="_blank" rel="noreferrer">View Jon's Resume</a>
         </div>
       </div>
     </div>
