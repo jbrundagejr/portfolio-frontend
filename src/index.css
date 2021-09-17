@@ -26,7 +26,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1em;
   font-family: sofia-pro, sans-serif;
 }
 
@@ -143,6 +143,45 @@ i.icon, i.icons {
   background-color: black
 }
 
+.ui.modal {
+  position: relative;
+  height: auto;
+  width: 90%;
+}
+
+.modalLink {
+  font-family: sofia-pro,sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+#modalHeader {
+  font-family: sofia-pro,sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1px black;
+  font-size: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#modalLinkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#devIcon {
+  font-size: 3em;
+  padding-right: 10px
+}
+
 #aboutHeader {
   margin: 0 10%;
 }
@@ -257,6 +296,7 @@ a.footerLink {
   h4 {
     font-size: 2em;
     font-family: sofia-pro, sans-serif;
+    font-weight: 700;
   }
 
   p {
@@ -497,13 +537,9 @@ a.footerLink {
     height: auto;
   }
 
-  /* .ui.modal>.content {
-    background-color: rgb(209, 209, 209);
+  #modalCloseIcon:hover {
+    cursor: pointer;
   }
-
-  .ui.modal>.header {
-    background-color: rgb(209, 209, 209);
-  } */
 
   .modalLink {
     font-family: sofia-pro,sans-serif;

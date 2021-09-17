@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import {Modal, Header, Segment, Dimmer, Image, Loader} from 'semantic-ui-react'
+import {Modal, Header, Segment, Dimmer, Image, Loader, Icon} from 'semantic-ui-react'
 
 function ProjectModal({id}){
   const [project, setProject] = useState(null)
@@ -42,7 +42,12 @@ function ProjectModal({id}){
           key={id}
           trigger={<h3>More Info</h3>}
         >
-          <Header><h2>{name}</h2></Header>
+          <Header>
+            <div id="modalHeader">
+              {name}
+              <Icon id="modalCloseIcon" name="arrow alternate circle left outline" size="small" onClick={() => setOpen(false)} />
+            </div>
+          </Header>
           <Modal.Content image>
             <Image size="large" src={image} alt={name} wrapped />
             <Modal.Description>

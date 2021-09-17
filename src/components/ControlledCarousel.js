@@ -21,7 +21,6 @@ function ControlledCarousel({projectArray}) {
                 <ProjectModal id={projectObj.id}/>
             </Carousel.Caption>
           </Carousel.Item>
-        
       )
     })
   
