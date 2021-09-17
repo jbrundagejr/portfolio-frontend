@@ -106,13 +106,74 @@ i.icon, i.icons {
 }
 
 #welcomeContainer {
-  margin: 0 15%;
+  margin: 0 10%;
 }
 
 #welcomeNote{
   padding-top: 2em;
   padding-bottom: 2em;
   font-size: 1.5em;
+}
+
+#projectHeader {
+  margin: 0 10%;
+}
+
+#carouselContainer{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  padding-top: 25px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  display: none;
+}
+
+.carousel .carousel-indicators li {
+  background-color: rgb(119, 118, 118)
+}
+
+.carousel .carousel-indicators li.active {
+  background-color: black
+}
+
+#aboutHeader {
+  margin: 0 10%;
+}
+
+#aboutContent {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+#aboutLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+}
+
+#bioBlurb {
+  margin: 0 10%
+}
+
+.bioLink {
+  padding: 10px;
+  color: black;
+  padding-top: 10px;
+}
+
+#resumeLink{
+  font-family: 'sofia-pro', sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+  color: black;
 }
 
 #footerContainer {
@@ -164,10 +225,6 @@ a.footerLink {
     cursor: pointer;
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 1px black;
-  }
-
-  #modalHeaderOdd {
-    color: white;
   }
 
   h4 {
@@ -274,13 +331,35 @@ a.footerLink {
     margin: 0 20%;
   }
 
+  #projectHeader {
+    margin: 0 0%;
+  }
+
   #carouselContainer{
     padding-top: 2em;
-    padding-bottom: 2em;
+  }
+
+  .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    padding-top: 25px;
+  }
+
+  .carousel .carousel-indicators li {
+    background-color: rgb(119, 118, 118)
+  }
+
+  .carousel .carousel-indicators li.active {
+    background-color: black
   }
 
   #aboutContainer {
     margin: 0 20%;
+  }
+
+  #aboutHeader {
+    margin: 0 0%;
   }
 
   #aboutContent {

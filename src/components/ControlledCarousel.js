@@ -27,7 +27,7 @@ function ControlledCarousel() {
               alt={projectObj.name}
             />
             <Carousel.Caption>
-              <ProjectModal id={projectObj.id}/>
+                <ProjectModal id={projectObj.id}/>
             </Carousel.Caption>
           </Carousel.Item>
         

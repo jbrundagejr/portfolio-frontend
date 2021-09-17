@@ -4,7 +4,9 @@ import resume from '../JBrundageJrResume.pdf'
 function About(){
   return (
     <div id="aboutContainer" className="fadeIn">
-      <h2>About.</h2>
+      <div id="aboutHeader">
+        <h2>About.</h2>
+      </div>
       <div id="aboutContent">
         <div id="bioPhoto">
           <Image size = "large" src="https://imgur.com/5VyETe1.jpg" alt="Jon Brundage Jr."></Image>
