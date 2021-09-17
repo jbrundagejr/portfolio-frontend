@@ -176,6 +176,33 @@ i.icon, i.icons {
   color: black;
 }
 
+#contactContainer {
+  margin: 0 10%;
+}
+
+.formLabel {
+  font-family: sofia-pro, sans-serif;
+  font-size: 1.2em;
+  padding-top: 10px;
+}
+
+.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url] {
+  font-family: sofia-pro,sans-serif;
+  border: 1px solid black;
+}
+
+#emailConfirmation{
+  font-size: 1.5em;
+  padding-top: 15px;
+}
+
+.ui.button {
+  font-family: sofia-pro, sans-serif;
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+
 #footerContainer {
   display: flex;
   align-items: center;
@@ -346,6 +373,10 @@ a.footerLink {
     padding-top: 25px;
   }
 
+  .carousel-control-next, .carousel-control-prev{
+    display: flex;
+  }
+
   .carousel .carousel-indicators li {
     background-color: rgb(119, 118, 118)
   }
@@ -409,6 +440,10 @@ a.footerLink {
     margin: 0 20%;
   }
 
+  #contactHeader {
+    margin: 0 0%
+  }
+
   .formLabel {
     font-family: sofia-pro, sans-serif;
     font-size: 1.2em;
@@ -435,6 +470,7 @@ a.footerLink {
 
   .ui.button {
     font-family: sofia-pro, sans-serif;
+    color: black;
   }
 
   #footerContainer {
@@ -444,7 +480,6 @@ a.footerLink {
     height: 4em;
     bottom: 0;
     margin: 0 20%;
-    /* position: fixed; */
   }
 
   a.footerLink {

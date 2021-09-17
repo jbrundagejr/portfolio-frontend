@@ -52,7 +52,7 @@ function Contact(){
 
   return (
     <div id="contactContainer" className="fadeIn">
-      <h2>Contact.</h2>
+        <h2>Contact.</h2>
       <div id="contactContent">
         {successEmail ? 
         <p id="emailConfirmation" className="fadeIn">Thanks for emailing me. I'll get back to you shortly!</p> : 
@@ -62,20 +62,20 @@ function Contact(){
           </div>
           <Form onSubmit={handleEmailSubmit}>
             <Form.Field required>
-              <label className="formLabel">Name</label>
-              <Input required placeholder='Your name' value={userName} onChange={whatUserNamed}/>
+              <label htmlFor="name" className="formLabel">Name</label>
+              <Input id="name" required placeholder='Your name' value={userName} onChange={whatUserNamed}/>
             </Form.Field>
             <Form.Field required>
-              <label className="formLabel">Email</label>
-              <Input required type="email" placeholder='Your Email Address' value={userEmail} onChange={whatUserEmailed} />
+              <label htmlFor="email" className="formLabel">Email</label>
+              <Input id="email" required type="email" placeholder='Your Email Address' value={userEmail} onChange={whatUserEmailed} />
             </Form.Field>
             <Form.Field required>
-              <label className="formLabel">Subject</label>
-              <Input required placeholder='Email Subject' value={userSubject} onChange={whatUserSubjected} />
+              <label htmlFor="subject" className="formLabel">Subject</label>
+              <Input id="subject" required placeholder='Email Subject' value={userSubject} onChange={whatUserSubjected} />
             </Form.Field>
             <Form.Field required>
-              <label className="formLabel">Message</label>
-              <Input required placeholder='Your Message' value={userMessage} onChange={whatUserMessaged} />
+              <label htmlFor="message" className="formLabel">Message</label>
+              <Input id="message" required placeholder='Your Message' value={userMessage} onChange={whatUserMessaged} />
             </Form.Field>
             <Button>Send Email</Button>
           </Form>
