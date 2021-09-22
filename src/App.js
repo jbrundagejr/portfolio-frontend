@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 import Header from './components/Header'
 import Welcome from './components/Welcome'
@@ -8,16 +8,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
-  const [projectArray, setProjectArray] = useState([])
-
-  useEffect(() => {
-    fetch("https://mighty-fjord-51024.herokuapp.com/projects")
-    .then(res => res.json())
-    .then(projectData => {
-      setProjectArray(projectData)
-    })
-  }, [])
-
+  
   return (
     <div>
       <Header />
@@ -29,7 +20,7 @@ function App() {
           <About />
         </Route>
         <Route exact path = "/projects">
-          <Projects projectArray={projectArray} />
+          <Projects />
         </Route>
         <Route exact path = "/contact">
           <Contact />

@@ -124,6 +124,10 @@ i.icon, i.icons {
   font-size: 1.5em;
 }
 
+.loadingDiv {
+  margin: 0 10%
+}
+
 #projectHeader {
   margin: 0 10%;
 }
@@ -369,6 +373,11 @@ a.footerLink {
     justify-content: flex-end;
   }
 
+  #desktopLinkContainer {
+    display: flex;
+    align-items: center;
+  }
+
   .headerLink {
     font-size: 1.5em;
     font-style: bold;
@@ -385,6 +394,10 @@ a.footerLink {
     -webkit-text-fill-color: white;
     -webkit-text-stroke: .75px black;
     text-decoration: none;
+  }
+
+  .loadingDiv {
+    margin: 0 20%
   }
 
   #welcomeContainer {
@@ -432,6 +445,10 @@ a.footerLink {
 
   .carousel .carousel-indicators li.active {
     background-color: black
+  }
+
+  #modalContainer{
+    margin: 0 20%;
   }
 
   #aboutContainer {
