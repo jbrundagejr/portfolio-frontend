@@ -106,6 +106,12 @@ i.icon, i.icons {
   justify-content: flex-start;
 }
 
+.headerLink:hover {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: .75px black;
+  text-decoration: none;
+}
+
 #welcomeContainer {
   margin: 0 10%;
 }

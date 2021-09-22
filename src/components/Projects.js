@@ -6,9 +6,7 @@ function Projects({projectArray}){
       <div id="projectHeader">
         <h2>Projects.</h2>
       </div>
-      <div id="carouselContainer">
         <ControlledCarousel projectArray={projectArray} />
-      </div>
     </div>
   )
 }
