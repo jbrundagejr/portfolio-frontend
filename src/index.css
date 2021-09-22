@@ -114,6 +114,8 @@ i.icon, i.icons {
 
 #welcomeContainer {
   margin: 0 10%;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 #welcomeNote{
