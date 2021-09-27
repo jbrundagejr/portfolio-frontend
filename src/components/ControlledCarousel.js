@@ -5,7 +5,7 @@ import ProjectModal from './ProjectModal'
 function ControlledCarousel({projectArray}) {
     const [index, setIndex] = useState(0);
   
-    const handleSelect = (selectedIndex, e) => {
+    const handleSelect = (selectedIndex) => {
       setIndex(selectedIndex);
     };
 
