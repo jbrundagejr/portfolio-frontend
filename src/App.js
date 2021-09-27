@@ -1,5 +1,6 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
+import {useState, useEffect} from 'react'
 import Header from './components/Header'
 import Welcome from './components/Welcome'
 import Projects from './components/Projects'
@@ -8,6 +9,17 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
+  const [projectArray, setProjectArray] = useState([])
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(() => {
+    fetch("https://mighty-fjord-51024.herokuapp.com/projects")
+    .then(res => res.json())
+    .then(projectData => {
+      setProjectArray(projectData)
+      setIsLoaded(true)
+    })
+  }, [])
   
   return (
     <div>
@@ -20,7 +32,7 @@ function App() {
           <About />
         </Route>
         <Route exact path = "/projects">
-          <Projects />
+          <Projects isLoaded={isLoaded} projectArray={projectArray} />
         </Route>
         <Route exact path = "/contact">
           <Contact />

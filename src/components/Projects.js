@@ -1,19 +1,8 @@
-import {useState, useEffect} from 'react'
 import {Dimmer, Loader, Image, Segment} from 'semantic-ui-react'
 import ControlledCarousel from './ControlledCarousel'
 
-function Projects(){
-  const [projectArray, setProjectArray] = useState([])
-  const [isLoaded, setIsLoaded] = useState(false)
-
-  useEffect(() => {
-    fetch("https://mighty-fjord-51024.herokuapp.com/projects")
-    .then(res => res.json())
-    .then(projectData => {
-      setProjectArray(projectData)
-      setIsLoaded(true)
-    })
-  }, [])
+function Projects({isLoaded, projectArray}){
+  
 
   if(!isLoaded){
     return (

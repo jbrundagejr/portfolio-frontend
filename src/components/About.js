@@ -1,5 +1,5 @@
 import {Image} from 'semantic-ui-react'
-import resume from '../JBrundageJrResume.pdf'
+import resume from '../JonBrundageJrResume.pdf'
 
 function About(){
   return (
