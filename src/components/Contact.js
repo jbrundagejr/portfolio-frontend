@@ -46,7 +46,7 @@ function Contact(){
           <Form onSubmit={handleEmailSubmit}>
             <Form.Field
               required
-              id="name"
+              id="Name"
               label="Name"
               control={Input}
               type="text"
@@ -57,7 +57,7 @@ function Contact(){
             />              
             <Form.Field 
               required
-              id="email"
+              id="Email"
               label="Email"
               control={Input}
               type="email"
@@ -68,7 +68,7 @@ function Contact(){
             />
             <Form.Field 
               required 
-              id="subject" 
+              id="Subject" 
               label="Subject"
               control={Input}
               type="text"
@@ -79,7 +79,7 @@ function Contact(){
             />
             <Form.Field 
               required 
-              id="message" 
+              id="Message" 
               label="Message"
               control={TextArea}
               type="text"
