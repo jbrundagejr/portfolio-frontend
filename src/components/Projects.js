@@ -11,7 +11,6 @@ function Projects({isLoaded, projectArray}){
           <Dimmer active inverted>
             <Loader inverted size="large">Loading</Loader>
           </Dimmer>
-          <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
         </Segment>
       </div>
     )

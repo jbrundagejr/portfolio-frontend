@@ -23,7 +23,6 @@ function ProjectModal({id}){
           <Dimmer active inverted>
             <Loader inverted size='large'>Loading</Loader>
           </Dimmer>
-          <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
         </Segment>
       </div>
     )
