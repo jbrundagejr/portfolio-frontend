@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {Form, Input, Button} from 'semantic-ui-react'
+import {Form, Input, Button, TextArea} from 'semantic-ui-react'
 
 function Contact(){
   const [userName, setUserName] = useState("")
@@ -7,22 +7,6 @@ function Contact(){
   const [userSubject, setUserSubject] = useState("")
   const [userMessage, setUserMessage] = useState("")
   const [successEmail, setSuccessEmail] = useState("")
-
-  function whatUserNamed(e){
-    setUserName(e.target.value)
-  }
-
-  function whatUserEmailed(e){
-    setUserEmail(e.target.value)
-  }
-
-  function whatUserSubjected(e){
-    setUserSubject(e.target.value)
-  }
-
-  function whatUserMessaged(e){
-    setUserMessage(e.target.value)
-  }
 
   function handleEmailSubmit(e) {
     e.preventDefault()
@@ -61,22 +45,50 @@ function Contact(){
             <p>Please feel free to reach out if you have any questions or development needs. I will get back to you as soon as I can, and thank you in advance for your interest!</p>
           </div>
           <Form onSubmit={handleEmailSubmit}>
-            <Form.Field required>
-              <label htmlFor="name" className="formLabel">Name</label>
-              <Input id="name" required placeholder='Your name' value={userName} onChange={whatUserNamed}/>
-            </Form.Field>
-            <Form.Field required>
-              <label htmlFor="email" className="formLabel">Email</label>
-              <Input id="email" required type="email" placeholder='Your Email Address' value={userEmail} onChange={whatUserEmailed} />
-            </Form.Field>
-            <Form.Field required>
-              <label htmlFor="subject" className="formLabel">Subject</label>
-              <Input id="subject" required placeholder='Email Subject' value={userSubject} onChange={whatUserSubjected} />
-            </Form.Field>
-            <Form.Field required>
-              <label htmlFor="message" className="formLabel">Message</label>
-              <Form.TextArea id="message" required placeholder='Your Message' value={userMessage} onChange={whatUserMessaged} />
-            </Form.Field>
+            <Form.Field
+              required
+              id="name"
+              label="Name"
+              control={Input}
+              type="text"
+              placeholder='Your name'
+              className="formLabel"
+              value={userName}
+              onChange={e => setUserName(e.target.value)} 
+            />              
+            <Form.Field 
+              required
+              id="email"
+              label="Email"
+              control={Input}
+              type="email"
+              placeholder='Your Email Address'
+              className="formLabel"
+              value={userEmail}
+              onChange={e => setUserEmail(e.target.value)}
+            />
+            <Form.Field 
+              required 
+              id="subject" 
+              label="Subject"
+              control={Input}
+              type="text"
+              placeholder='Email Subject'
+              className="formLabel"
+              value={userSubject}
+              onChange={e => setUserSubject(e.target.value)} 
+            />
+            <Form.Field 
+              required 
+              id="message" 
+              label="Message"
+              control={TextArea}
+              type="text"
+              placeholder='Your Message'
+              className="formLabel"
+              value={userMessage}
+              onChange={e => setUserMessage(e.target.value)}
+            />
             <Button>Send Email</Button>
           </Form>
         </div>
