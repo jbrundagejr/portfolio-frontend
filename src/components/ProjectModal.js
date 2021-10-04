@@ -1,5 +1,7 @@
 import {useEffect, useState} from 'react'
 import {Modal, Header, Segment, Dimmer, Image, Loader, Icon} from 'semantic-ui-react'
+import axios from 'axios'
+import {SERVER_URL} from '../util/server_url'
 
 function ProjectModal({id}){
   const [project, setProject] = useState(null)
@@ -7,10 +9,9 @@ function ProjectModal({id}){
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    fetch(`https://mighty-fjord-51024.herokuapp.com/projects/${id}`)
-      .then(res => res.json())
+    axios.get(`${SERVER_URL}/projects/${id}`)
       .then(projectData => {
-        setProject(projectData)
+        setProject(projectData.data)
         setIsLoaded(true)
       })
   }, [id])

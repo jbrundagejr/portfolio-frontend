@@ -1,5 +1,7 @@
 import {useState} from 'react'
 import {Form, Input, Button, TextArea} from 'semantic-ui-react'
+import axios from 'axios'
+import {SERVER_URL} from '../util/server_url'
 
 function Contact(){
   const [userName, setUserName] = useState("")
@@ -16,19 +18,12 @@ function Contact(){
       subject: userSubject,
       message: userMessage
     }
-    fetch(`https://mighty-fjord-51024.herokuapp.com/emails`, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json"
-      },
-      body: JSON.stringify(newEmail)
-    })
-     .then(res => res.json())
+    axios.post(`${SERVER_URL}/emails`, newEmail)
      .then(resp => {
-       if(resp.error){
-          setEmailStatus(resp.error)
+       if(resp.data.error){
+          setEmailStatus(resp.data.error)
        } else {
-          setEmailStatus(resp.message)
+          setEmailStatus(resp.data.message)
           setUserName("")
           setUserEmail("")
           setUserSubject("")

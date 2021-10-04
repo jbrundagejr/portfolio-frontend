@@ -7,16 +7,17 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import axios from 'axios'
+import {SERVER_URL} from './util/server_url'
 
 function App() {
   const [projectArray, setProjectArray] = useState([])
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    fetch("https://mighty-fjord-51024.herokuapp.com/projects")
-    .then(res => res.json())
+    axios.get(`${SERVER_URL}/projects`)
     .then(projectData => {
-      setProjectArray(projectData)
+      setProjectArray(projectData.data)
       setIsLoaded(true)
     })
   }, [])
