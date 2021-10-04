@@ -75,7 +75,7 @@ function Contact(){
             </Form.Field>
             <Form.Field required>
               <label htmlFor="message" className="formLabel">Message</label>
-              <Input id="message" required placeholder='Your Message' value={userMessage} onChange={whatUserMessaged} />
+              <Form.TextArea id="message" required placeholder='Your Message' value={userMessage} onChange={whatUserMessaged} />
             </Form.Field>
             <Button>Send Email</Button>
           </Form>

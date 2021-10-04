@@ -1,6 +1,6 @@
 /* FOR MOBILE */
 h1 {
-  font-family: sofia-pro,sans-serif;
+  font-family: sofia-pro, sans-serif;
   font-weight: 900;
   font-style: normal;
   -webkit-text-fill-color: white;
@@ -9,7 +9,7 @@ h1 {
 }
 
 h2 {
-  font-family: sofia-pro,sans-serif;
+  font-family: sofia-pro, sans-serif;
   font-weight: 900;
   font-style: normal;
   -webkit-text-fill-color: white;
@@ -19,7 +19,7 @@ h2 {
 
 h3 {
   font-size: 2em;
-  font-family: sofia-pro,sans-serif;
+  font-family: sofia-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
   color: black;
@@ -32,7 +32,7 @@ h4 {
 }
 
 p {
-  font-family: sofia-pro,sans-serif;
+  font-family: sofia-pro, sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 1.25em;
@@ -48,34 +48,37 @@ p {
 }
 @keyframes fadein {
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-moz-keyframes fadein { /* Firefox */
+@-moz-keyframes fadein {
+  /* Firefox */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-o-keyframes fadein { /* Opera */
+@-o-keyframes fadein {
+  /* Opera */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -88,7 +91,8 @@ p {
   justify-content: flex-end;
 }
 
-i.icon, i.icons {
+i.icon,
+i.icons {
   font-size: 2em;
 }
 
@@ -108,7 +112,7 @@ i.icon, i.icons {
 
 .headerLink:hover {
   -webkit-text-fill-color: white;
-  -webkit-text-stroke: .75px black;
+  -webkit-text-stroke: 0.75px black;
   text-decoration: none;
 }
 
@@ -118,21 +122,21 @@ i.icon, i.icons {
   padding-right: 1px;
 }
 
-#welcomeNote{
+#welcomeNote {
   padding-top: 2em;
   padding-bottom: 2em;
   font-size: 1.5em;
 }
 
 .loadingDiv {
-  margin: 0 10%
+  margin: 0 10%;
 }
 
 #projectHeader {
   margin: 0 10%;
 }
 
-#carouselContainer{
+#carouselContainer {
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -144,16 +148,17 @@ i.icon, i.icons {
   padding-top: 25px;
 }
 
-.carousel-control-next, .carousel-control-prev{
+.carousel-control-next,
+.carousel-control-prev {
   display: none;
 }
 
 .carousel .carousel-indicators li {
-  background-color: rgb(119, 118, 118)
+  background-color: rgb(119, 118, 118);
 }
 
 .carousel .carousel-indicators li.active {
-  background-color: black
+  background-color: black;
 }
 
 .ui.modal {
@@ -163,7 +168,7 @@ i.icon, i.icons {
 }
 
 .modalLink {
-  font-family: sofia-pro,sans-serif;
+  font-family: sofia-pro, sans-serif;
   font-weight: 700;
   color: black;
   font-size: 1.5em;
@@ -174,12 +179,12 @@ i.icon, i.icons {
 
 .modalLink:hover {
   -webkit-text-fill-color: white;
-  -webkit-text-stroke: .75px black;
+  -webkit-text-stroke: 0.75px black;
   text-decoration: none;
 }
 
 #modalHeader {
-  font-family: sofia-pro,sans-serif;
+  font-family: sofia-pro, sans-serif;
   font-weight: 900;
   font-style: normal;
   -webkit-text-fill-color: white;
@@ -198,7 +203,7 @@ i.icon, i.icons {
 
 #devIcon {
   font-size: 3em;
-  padding-right: 10px
+  padding-right: 10px;
 }
 
 #aboutHeader {
@@ -218,7 +223,7 @@ i.icon, i.icons {
 }
 
 #bioBlurb {
-  margin: 0 10%
+  margin: 0 10%;
 }
 
 .bioLink {
@@ -227,7 +232,7 @@ i.icon, i.icons {
   padding-top: 10px;
 }
 
-#resumeLink{
+#resumeLink {
   font-family: 'sofia-pro', sans-serif;
   font-weight: 600;
   font-size: 1.25em;
@@ -244,12 +249,28 @@ i.icon, i.icons {
   padding-top: 10px;
 }
 
-.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url] {
-  font-family: sofia-pro,sans-serif;
+.ui.form input:not([type]),
+.ui.form input[type='date'],
+.ui.form input[type='datetime-local'],
+.ui.form input[type='email'],
+.ui.form input[type='file'],
+.ui.form input[type='number'],
+.ui.form input[type='password'],
+.ui.form input[type='search'],
+.ui.form input[type='tel'],
+.ui.form input[type='text'],
+.ui.form input[type='time'],
+.ui.form input[type='url'] {
+  font-family: sofia-pro, sans-serif;
   border: 1px solid black;
 }
 
-#emailConfirmation{
+.ui.form textarea {
+  font-family: sofia-pro, sans-serif;
+  border: 1px solid black;
+}
+
+#emailConfirmation {
   font-size: 1.5em;
   padding-top: 15px;
 }
@@ -275,13 +296,10 @@ a.footerLink {
   color: black;
 }
 
-
-
 /* FOR DESKTOP */
-@media (min-width: 800px){
-
+@media (min-width: 800px) {
   h1 {
-    font-family: sofia-pro,sans-serif;
+    font-family: sofia-pro, sans-serif;
     font-weight: 900;
     font-style: normal;
     -webkit-text-fill-color: white;
@@ -290,7 +308,7 @@ a.footerLink {
   }
 
   h2 {
-    font-family: sofia-pro,sans-serif;
+    font-family: sofia-pro, sans-serif;
     font-weight: 900;
     font-style: normal;
     -webkit-text-fill-color: white;
@@ -300,7 +318,7 @@ a.footerLink {
 
   h3 {
     font-size: 2em;
-    font-family: sofia-pro,sans-serif;
+    font-family: sofia-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     color: black;
@@ -319,7 +337,7 @@ a.footerLink {
   }
 
   p {
-    font-family: sofia-pro,sans-serif;
+    font-family: sofia-pro, sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 1.25em;
@@ -335,38 +353,42 @@ a.footerLink {
   }
   @keyframes fadein {
     from {
-        opacity:0;
+      opacity: 0;
     }
     to {
-        opacity:1;
+      opacity: 1;
     }
   }
-  @-moz-keyframes fadein { /* Firefox */
+  @-moz-keyframes fadein {
+    /* Firefox */
     from {
-        opacity:0;
+      opacity: 0;
     }
     to {
-        opacity:1;
+      opacity: 1;
     }
   }
-  @-webkit-keyframes fadein { /* Safari and Chrome */
+  @-webkit-keyframes fadein {
+    /* Safari and Chrome */
     from {
-        opacity:0;
+      opacity: 0;
     }
     to {
-        opacity:1;
+      opacity: 1;
     }
   }
-  @-o-keyframes fadein { /* Opera */
+  @-o-keyframes fadein {
+    /* Opera */
     from {
-        opacity:0;
+      opacity: 0;
     }
     to {
-        opacity: 1;
+      opacity: 1;
     }
   }
 
-  i.icon, i.icons {
+  i.icon,
+  i.icons {
     font-size: 2em;
   }
 
@@ -398,19 +420,19 @@ a.footerLink {
 
   .headerLink:hover {
     -webkit-text-fill-color: white;
-    -webkit-text-stroke: .75px black;
+    -webkit-text-stroke: 0.75px black;
     text-decoration: none;
   }
 
   .loadingDiv {
-    margin: 0 20%
+    margin: 0 20%;
   }
 
   #welcomeContainer {
     margin: 0 20%;
   }
 
-  #welcomeNote{
+  #welcomeNote {
     padding-top: 4em;
     padding-bottom: 4em;
     font-size: 1.5em;
@@ -430,7 +452,7 @@ a.footerLink {
     margin: 0 0%;
   }
 
-  #carouselContainer{
+  #carouselContainer {
     padding-top: 2em;
   }
 
@@ -441,16 +463,17 @@ a.footerLink {
     padding-top: 25px;
   }
 
-  .carousel-control-next, .carousel-control-prev{
+  .carousel-control-next,
+  .carousel-control-prev {
     display: flex;
   }
 
   .carousel .carousel-indicators li {
-    background-color: rgb(119, 118, 118)
+    background-color: rgb(119, 118, 118);
   }
 
   .carousel .carousel-indicators li.active {
-    background-color: black
+    background-color: black;
   }
 
   #aboutContainer {
@@ -491,7 +514,7 @@ a.footerLink {
     color: rgb(9, 155, 130);
   }
 
-  #resumeLink{
+  #resumeLink {
     font-family: 'sofia-pro', sans-serif;
     font-weight: 600;
     font-size: 1.25em;
@@ -500,7 +523,7 @@ a.footerLink {
 
   #resumeLink:hover {
     -webkit-text-fill-color: white;
-    -webkit-text-stroke: .75px black;
+    -webkit-text-stroke: 0.75px black;
     text-decoration: none;
   }
 
@@ -509,7 +532,7 @@ a.footerLink {
   }
 
   #contactHeader {
-    margin: 0 0%
+    margin: 0 0%;
   }
 
   .formLabel {
@@ -518,20 +541,31 @@ a.footerLink {
     padding-top: 10px;
   }
 
-  .ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url] {
-    font-family: sofia-pro,sans-serif;
+  .ui.form input:not([type]),
+  .ui.form input[type='date'],
+  .ui.form input[type='datetime-local'],
+  .ui.form input[type='email'],
+  .ui.form input[type='file'],
+  .ui.form input[type='number'],
+  .ui.form input[type='password'],
+  .ui.form input[type='search'],
+  .ui.form input[type='tel'],
+  .ui.form input[type='text'],
+  .ui.form input[type='time'],
+  .ui.form input[type='url'] {
+    font-family: sofia-pro, sans-serif;
   }
 
-  #contactBlurb{
+  #contactBlurb {
     font-size: 1.5em;
   }
 
-  #contactContent{
+  #contactContent {
     padding-top: 2em;
     padding-bottom: 2em;
   }
 
-  #emailConfirmation{
+  #emailConfirmation {
     font-size: 1.5em;
     padding-top: 15px;
   }
@@ -556,7 +590,7 @@ a.footerLink {
 
   a.footerLink:hover {
     -webkit-text-fill-color: white;
-    -webkit-text-stroke: .75px black;
+    -webkit-text-stroke: 0.75px black;
     text-decoration: none;
   }
 
@@ -570,7 +604,7 @@ a.footerLink {
   }
 
   .modalLink {
-    font-family: sofia-pro,sans-serif;
+    font-family: sofia-pro, sans-serif;
     font-weight: 700;
     color: black;
     font-size: 1.5em;
@@ -581,7 +615,7 @@ a.footerLink {
 
   .modalLink:hover {
     -webkit-text-fill-color: white;
-    -webkit-text-stroke: .75px black;
+    -webkit-text-stroke: 0.75px black;
     text-decoration: none;
   }
 
@@ -593,7 +627,6 @@ a.footerLink {
 
   #devIcon {
     font-size: 3em;
-    padding-right: 10px
+    padding-right: 10px;
   }
-
 }
