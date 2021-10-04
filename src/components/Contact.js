@@ -41,7 +41,7 @@ function Contact(){
     })
      .then(res => res.json())
      .then(resp => {
-       setSuccessEmail(resp)
+       setSuccessEmail(resp.message)
        setUserName("")
        setUserEmail("")
        setUserSubject("")
@@ -55,7 +55,7 @@ function Contact(){
         <h2>Contact.</h2>
       <div id="contactContent">
         {successEmail ? 
-        <p id="emailConfirmation" className="fadeIn">Thanks for emailing me. I'll get back to you shortly!</p> : 
+        <p id="emailConfirmation" className="fadeIn">{successEmail}</p> : 
         <div>
           <div id="contactBlurb">
             <p>Please feel free to reach out if you have any questions or development needs. I will get back to you as soon as I can, and thank you in advance for your interest!</p>
