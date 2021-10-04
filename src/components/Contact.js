@@ -6,7 +6,7 @@ function Contact(){
   const [userEmail, setUserEmail] = useState("")
   const [userSubject, setUserSubject] = useState("")
   const [userMessage, setUserMessage] = useState("")
-  const [successEmail, setSuccessEmail] = useState("")
+  const [emailStatus, setEmailStatus] = useState("")
 
   function handleEmailSubmit(e) {
     e.preventDefault()
@@ -25,24 +25,28 @@ function Contact(){
     })
      .then(res => res.json())
      .then(resp => {
-       setSuccessEmail(resp.message)
-       setUserName("")
-       setUserEmail("")
-       setUserSubject("")
-       setUserMessage("")
-       }
-     )
+       if(resp.error){
+          setEmailStatus(resp.error)
+       } else {
+          setEmailStatus(resp.message)
+          setUserName("")
+          setUserEmail("")
+          setUserSubject("")
+          setUserMessage("")
+        }
+     })
   }
 
   return (
     <div id="contactContainer" className="fadeIn">
         <h2>Contact.</h2>
       <div id="contactContent">
-        {successEmail ? 
-        <p id="emailConfirmation" className="fadeIn">{successEmail}</p> : 
+        {emailStatus ? 
+        <p id="emailConfirmation" className="fadeIn">{emailStatus}</p> : 
         <div>
           <div id="contactBlurb">
-            <p>Please feel free to reach out if you have any questions or development needs. I will get back to you as soon as I can, and thank you in advance for your interest!</p>
+            <p>Please feel free to reach out if you have any questions or development needs. I will get back to you as soon as I can, 
+              and thank you in advance for your interest!</p>
           </div>
           <Form onSubmit={handleEmailSubmit}>
             <Form.Field
