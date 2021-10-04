@@ -7,7 +7,7 @@ function Footer(){
           <Icon size="big" name='linkedin' /></a>
         <a className="footerLink" href="https://github.com/jbrundagejr" target="_blank" rel="noreferrer">
           <Icon size="big" name='github' /></a>
-        <a className="footerLink" href="https://medium.com/me/stories/public" target="_blank" rel="noreferrer">
+        <a className="footerLink" href="https://jbrundagejr.medium.com/" target="_blank" rel="noreferrer">
           <Icon size="big" name='medium' /></a>
         <a className="footerLink" href="https://twitter.com/BrundageJr" target="_blank" rel="noreferrer">
           <Icon size="big" name='twitter square' /></a>
