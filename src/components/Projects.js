@@ -1,4 +1,4 @@
-import {Dimmer, Loader, Image, Segment} from 'semantic-ui-react'
+import {Dimmer, Loader, Segment} from 'semantic-ui-react'
 import ControlledCarousel from './ControlledCarousel'
 
 function Projects({isLoaded, projectArray}){
