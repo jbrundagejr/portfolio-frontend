@@ -20,7 +20,7 @@ function Contact(){
     }
     axios.post(`${SERVER_URL}/emails`, newEmail)
      .then(resp => {
-       if(resp.data.error){
+       if(resp.data.errors){
           setEmailStatus(resp.data.error)
        } else {
           setEmailStatus(resp.data.message)
