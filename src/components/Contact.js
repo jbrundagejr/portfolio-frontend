@@ -20,8 +20,9 @@ function Contact(){
     }
     axios.post(`${SERVER_URL}/emails`, newEmail)
      .then(resp => {
+       console.log(resp)
        if(resp.data.errors){
-          setEmailStatus(resp.data.error)
+          setEmailStatus(resp.data.errors)
        } else {
           setEmailStatus(resp.data.message)
           setUserName("")

@@ -4,13 +4,13 @@ function Footer(){
   return (
     <div id="footerContainer">
         <a className="footerLink" href="https://www.linkedin.com/in/jbrundagejr/" target="_blank" rel="noreferrer">
-          <Icon size="big" name='linkedin' /></a>
+          <Icon size="big" name='linkedin' alt='LinkedIn'/></a>
         <a className="footerLink" href="https://github.com/jbrundagejr" target="_blank" rel="noreferrer">
-          <Icon size="big" name='github' /></a>
+          <Icon size="big" name='github' alt='GitHub'/></a>
         <a className="footerLink" href="https://jbrundagejr.medium.com" target="_blank" rel="noreferrer">
-          <Icon size="big" name='medium' /></a>
+          <Icon size="big" name='medium' alt='Medium'/></a>
         <a className="footerLink" href="https://twitter.com/BrundageJr" target="_blank" rel="noreferrer">
-          <Icon size="big" name='twitter square' /></a>
+          <Icon size="big" name='twitter square' alt='Twitter'/></a>
     </div>
   )
 }
