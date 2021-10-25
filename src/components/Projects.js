@@ -5,7 +5,10 @@ const Projects = ({isLoaded, projectArray}) => {
   
   if(!isLoaded){
     return (
-      <div className="loadingDiv">
+      <div id="projectContainer" className="fadeIn">
+        <div id="projectHeader">
+          <h2>Projects.</h2>
+        </div>
         <Segment>
           <Dimmer active inverted>
             <Loader inverted size="large">Loading</Loader>

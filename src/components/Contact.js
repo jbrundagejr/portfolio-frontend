@@ -10,7 +10,7 @@ const Contact = () => {
   const [userMessage, setUserMessage] = useState("")
   const [emailStatus, setEmailStatus] = useState("")
 
-  function handleEmailSubmit(e) {
+  const handleEmailSubmit = (e) => {
     e.preventDefault()
     const newEmail = {
       name: userName,
