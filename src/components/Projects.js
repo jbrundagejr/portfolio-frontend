@@ -1,9 +1,8 @@
 import {Dimmer, Loader, Segment} from 'semantic-ui-react'
 import ControlledCarousel from './ControlledCarousel'
 
-function Projects({isLoaded, projectArray}){
+const Projects = ({isLoaded, projectArray}) => {
   
-
   if(!isLoaded){
     return (
       <div className="loadingDiv">

@@ -1,6 +1,6 @@
 import {Icon} from 'semantic-ui-react'
 
-function Footer(){
+const Footer = () => {
   return (
     <div id="footerContainer">
         <a className="footerLink" href="https://www.linkedin.com/in/jbrundagejr/" target="_blank" rel="noreferrer">

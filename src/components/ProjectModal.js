@@ -3,7 +3,7 @@ import {Modal, Header, Segment, Dimmer, Image, Loader, Icon} from 'semantic-ui-r
 import axios from 'axios'
 import {SERVER_URL} from '../util/server_url'
 
-function ProjectModal({id}){
+const ProjectModal = ({id}) => {
   const [project, setProject] = useState(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [open, setOpen] = useState(false)

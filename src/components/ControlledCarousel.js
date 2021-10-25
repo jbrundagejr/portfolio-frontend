@@ -2,7 +2,7 @@ import {useState} from 'react'
 import {Carousel} from 'react-bootstrap'
 import ProjectModal from './ProjectModal'
 
-function ControlledCarousel({projectArray}) {
+const ControlledCarousel = ({projectArray}) => {
     const [index, setIndex] = useState(0);
   
     const handleSelect = (selectedIndex) => {

@@ -1,7 +1,7 @@
 import {Image} from 'semantic-ui-react'
 import resume from '../JonBrundageJrResume.pdf'
 
-function About(){
+const About = () => {
   return (
     <div id="aboutContainer" className="fadeIn">
       <div id="aboutHeader">

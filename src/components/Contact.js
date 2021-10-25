@@ -3,7 +3,7 @@ import {Form, Input, Button, TextArea} from 'semantic-ui-react'
 import axios from 'axios'
 import {SERVER_URL} from '../util/server_url'
 
-function Contact(){
+const Contact = () => {
   const [userName, setUserName] = useState("")
   const [userEmail, setUserEmail] = useState("")
   const [userSubject, setUserSubject] = useState("")

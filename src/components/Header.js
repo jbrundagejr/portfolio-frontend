@@ -2,7 +2,7 @@ import {NavLink} from 'react-router-dom'
 import {Dropdown} from 'semantic-ui-react'
 import {useMediaQuery} from 'react-responsive'
 
-function Header(){
+const Header = () => {
   const isMobile = useMediaQuery({query: '(max-width: 799px)'})
 
   return (
