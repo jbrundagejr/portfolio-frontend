@@ -1,5 +1,6 @@
 import { Image } from "semantic-ui-react";
 import resume from "../JonBrundageJrResume.pdf";
+import headShot from "../assets/headShot.jpg";
 
 const About = () => {
   return (
@@ -9,11 +10,7 @@ const About = () => {
       </div>
       <div id="aboutContent">
         <div id="bioPhoto">
-          <Image
-            size="large"
-            src="./assets/headShot.jpg"
-            alt="Jon Brundage Jr."
-          ></Image>
+          <Image size="large" src={headShot} alt="Jon Brundage Jr."></Image>
         </div>
         <div id="bioBlurb">
           <p>
