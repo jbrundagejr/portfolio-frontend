@@ -1,4 +1,20 @@
 /* FOR MOBILE */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+#appContainer {
+  padding: 0 3em;
+}
+
 h1 {
   font-family: sofia-pro, sans-serif;
   font-weight: 900;
@@ -41,10 +57,10 @@ p {
 .fadeIn {
   min-width: 60%;
   min-height: 400px;
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
+  animation: fadein 350ms;
+  -moz-animation: fadein 350ms; /* Firefox */
+  -webkit-animation: fadein 350ms; /* Safari and Chrome */
+  -o-animation: fadein 350ms; /* Opera */
 }
 @keyframes fadein {
   from {
@@ -86,7 +102,6 @@ p {
   display: flex;
   background-color: white;
   height: 5em;
-  margin: 0 10%;
   align-items: center;
   justify-content: flex-end;
 }
@@ -117,7 +132,6 @@ i.icons {
 }
 
 #welcomeContainer {
-  margin: 0 10%;
   padding-left: 1px;
   padding-right: 1px;
 }
@@ -126,14 +140,6 @@ i.icons {
   padding-top: 2em;
   padding-bottom: 2em;
   font-size: 1.5em;
-}
-
-.loadingDiv {
-  margin: 0 10%;
-}
-
-#projectHeader {
-  margin: 0 10%;
 }
 
 #carouselContainer {
@@ -207,12 +213,12 @@ i.icons {
 }
 
 #aboutHeader {
-  margin: 0 10%;
+  padding: 0 0 1em;
 }
 
 #aboutContent {
-  padding-bottom: 1em;
-  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 #aboutLinks {
@@ -223,7 +229,16 @@ i.icons {
 }
 
 #bioBlurb {
-  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#bioPhoto img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .bioLink {
@@ -233,14 +248,10 @@ i.icons {
 }
 
 #resumeLink {
-  font-family: 'sofia-pro', sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 600;
   font-size: 1.25em;
   color: black;
-}
-
-#contactContainer {
-  margin: 0 10%;
 }
 
 .formLabel {
@@ -250,17 +261,17 @@ i.icons {
 }
 
 .ui.form input:not([type]),
-.ui.form input[type='date'],
-.ui.form input[type='datetime-local'],
-.ui.form input[type='email'],
-.ui.form input[type='file'],
-.ui.form input[type='number'],
-.ui.form input[type='password'],
-.ui.form input[type='search'],
-.ui.form input[type='tel'],
-.ui.form input[type='text'],
-.ui.form input[type='time'],
-.ui.form input[type='url'] {
+.ui.form input[type="date"],
+.ui.form input[type="datetime-local"],
+.ui.form input[type="email"],
+.ui.form input[type="file"],
+.ui.form input[type="number"],
+.ui.form input[type="password"],
+.ui.form input[type="search"],
+.ui.form input[type="tel"],
+.ui.form input[type="text"],
+.ui.form input[type="time"],
+.ui.form input[type="url"] {
   font-family: sofia-pro, sans-serif;
   border: 1px solid black;
 }
@@ -288,7 +299,6 @@ i.icons {
   justify-content: center;
   height: 4em;
   bottom: 0;
-  margin: 0 20%;
   /* position: fixed; */
 }
 
@@ -296,8 +306,18 @@ a.footerLink {
   color: black;
 }
 
+/* FOR TABLET */
+
+@media (min-width: 768px) {
+  #aboutContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+  }
+}
+
 /* FOR DESKTOP */
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   h1 {
     font-family: sofia-pro, sans-serif;
     font-weight: 900;
@@ -346,45 +366,20 @@ a.footerLink {
   .fadeIn {
     min-width: 60%;
     min-height: 400px;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 350ms;
+    -moz-animation: fadein 350ms; /* Firefox */
+    -webkit-animation: fadein 350ms; /* Safari and Chrome */
+    -o-animation: fadein 350ms; /* Opera */
   }
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+  .modal {
+    max-width: 880px;
   }
-  @-moz-keyframes fadein {
-    /* Firefox */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes fadein {
-    /* Safari and Chrome */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-o-keyframes fadein {
-    /* Opera */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+  .modalImage {
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    max-height: 60vh;
   }
 
   i.icon,
@@ -396,7 +391,6 @@ a.footerLink {
     display: flex;
     background-color: white;
     height: 5em;
-    margin: 0 20%;
     align-items: center;
     justify-content: flex-end;
   }
@@ -424,14 +418,6 @@ a.footerLink {
     text-decoration: none;
   }
 
-  .loadingDiv {
-    margin: 0 20%;
-  }
-
-  #welcomeContainer {
-    margin: 0 20%;
-  }
-
   #welcomeNote {
     padding-top: 4em;
     padding-bottom: 4em;
@@ -442,10 +428,6 @@ a.footerLink {
     display: flex;
     flex-direction: column;
     border-top: thin black;
-  }
-
-  #projectContainer {
-    margin: 0 20%;
   }
 
   #projectHeader {
@@ -476,24 +458,12 @@ a.footerLink {
     background-color: black;
   }
 
-  #aboutContainer {
-    margin: 0 20%;
-  }
-
   #aboutHeader {
     margin: 0 0%;
   }
 
   #aboutContent {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 2em;
-    padding-top: 2em;
-  }
-
-  #bioBlurb {
-    width: 60%;
-    padding-left: 10px;
+    padding: 2em 0;
   }
 
   #aboutLinks {
@@ -514,8 +484,12 @@ a.footerLink {
     color: rgb(9, 155, 130);
   }
 
+  #bioPhoto img {
+    max-width: 500px;
+  }
+
   #resumeLink {
-    font-family: 'sofia-pro', sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-weight: 600;
     font-size: 1.25em;
     color: black;
@@ -525,10 +499,6 @@ a.footerLink {
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 0.75px black;
     text-decoration: none;
-  }
-
-  #contactContainer {
-    margin: 0 20%;
   }
 
   #contactHeader {
@@ -542,17 +512,17 @@ a.footerLink {
   }
 
   .ui.form input:not([type]),
-  .ui.form input[type='date'],
-  .ui.form input[type='datetime-local'],
-  .ui.form input[type='email'],
-  .ui.form input[type='file'],
-  .ui.form input[type='number'],
-  .ui.form input[type='password'],
-  .ui.form input[type='search'],
-  .ui.form input[type='tel'],
-  .ui.form input[type='text'],
-  .ui.form input[type='time'],
-  .ui.form input[type='url'] {
+  .ui.form input[type="date"],
+  .ui.form input[type="datetime-local"],
+  .ui.form input[type="email"],
+  .ui.form input[type="file"],
+  .ui.form input[type="number"],
+  .ui.form input[type="password"],
+  .ui.form input[type="search"],
+  .ui.form input[type="tel"],
+  .ui.form input[type="text"],
+  .ui.form input[type="time"],
+  .ui.form input[type="url"] {
     font-family: sofia-pro, sans-serif;
   }
 
@@ -561,8 +531,7 @@ a.footerLink {
   }
 
   #contactContent {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding: 2em 0;
   }
 
   #emailConfirmation {
@@ -581,7 +550,6 @@ a.footerLink {
     justify-content: flex-end;
     height: 4em;
     bottom: 0;
-    margin: 0 20%;
   }
 
   a.footerLink {
@@ -628,5 +596,12 @@ a.footerLink {
   #devIcon {
     font-size: 3em;
     padding-right: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #appContainer {
+    width: 1440px;
+    margin: 0 auto;
   }
 }

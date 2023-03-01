@@ -1,25 +1,25 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
-import Header from "./components/Header";
-import Welcome from "./components/Welcome";
-import Projects from "./components/Projects";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import projects from "./data/data.json";
+import React from "react"
+import { Switch, Route } from "react-router-dom"
+import { useState, useEffect } from "react"
+import Header from "./components/Header"
+import Welcome from "./components/Welcome"
+import Projects from "./components/Projects"
+import About from "./components/About"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
+import { data } from "./data/data"
 
 function App() {
-  const [projectArray, setProjectArray] = useState([]);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [projectArray, setProjectArray] = useState([])
+  const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    setProjectArray(projects.data);
-    setIsLoaded(true);
-  }, []);
+    setProjectArray(data)
+    setIsLoaded(true)
+  }, [])
 
   return (
-    <div>
+    <div id="appContainer">
       <Header />
       <Switch>
         <Route exact path="/">
@@ -37,7 +37,7 @@ function App() {
       </Switch>
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

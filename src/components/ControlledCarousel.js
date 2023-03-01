@@ -1,28 +1,28 @@
-import { useState } from "react";
-import { Carousel } from "react-bootstrap";
-import ProjectModal from "./ProjectModal";
+import { useState } from "react"
+import { Carousel } from "react-bootstrap"
+import ProjectModal from "./ProjectModal"
 
 const ControlledCarousel = ({ projectArray }) => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0)
 
   const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
+    setIndex(selectedIndex)
+  }
 
   const projectArr = projectArray.map((projectObj) => {
     return (
-      <Carousel.Item key={projectObj.name}>
+      <Carousel.Item key={projectObj.title}>
         <img
-          className="d-block w-100"
+          className="d-block w-100 modalImage"
           src={projectObj.image}
-          alt={projectObj.name}
+          alt={projectObj.title}
         />
         <Carousel.Caption>
           <ProjectModal project={projectObj} />
         </Carousel.Caption>
       </Carousel.Item>
-    );
-  });
+    )
+  })
 
   return (
     <div id="carouselContainer">
@@ -30,7 +30,7 @@ const ControlledCarousel = ({ projectArray }) => {
         {projectArr}
       </Carousel>
     </div>
-  );
-};
+  )
+}
 
-export default ControlledCarousel;
+export default ControlledCarousel

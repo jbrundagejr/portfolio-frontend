@@ -1,6 +1,5 @@
-import { Image } from "semantic-ui-react";
-import resume from "../JonBrundageJrResume.pdf";
-import headShot from "../assets/headShot.jpg";
+import resume from "../BrundageResume.pdf"
+import headShot from "../assets/headShot.jpg"
 
 const About = () => {
   return (
@@ -10,29 +9,31 @@ const About = () => {
       </div>
       <div id="aboutContent">
         <div id="bioPhoto">
-          <Image size="large" src={headShot} alt="Jon Brundage Jr."></Image>
+          <img src={headShot} alt="Jon Brundage Jr." />
         </div>
         <div id="bioBlurb">
           <p>
-            A graduate of the Flatiron School of Software Engineering in June
-            2021, Jon realized his passion for coding and web design very early
-            on in the program. Specializing in React and Ruby on Rails, Jon is a
-            full-stack engineer with an ability to quickly learn new concepts
-            and implement efficient coding to solve problems.
+            As a creative technologist, I am constantly adapting my skillset to
+            build many projects in many different formats. I am primarily a
+            front-end developer, with strong skills in Javascript. I am
+            proficient in modern JS libraries and frameworks like Vue3, Svelte
+            and React. I especially enjoy building interactive data
+            visualizations to transform information that is abstract and
+            inaccessible into something that is insightful and understandable.
+            If the last two years in web development has taught me anything, it
+            is that I will be happily learning for the rest of my life.
           </p>
           <p>
-            Before getting into coding, Jon worked in television production as a
-            freelance Director of Photography and Camera Operator for over
-            thirteen years. He has shot for numerous networks including HBO,
-            AMC, NatGeo, and Comedy Central among others. In his capacity as
-            Director of Photography, Jon cultivated team management skills, and
-            heavily relied on his innate ability to lead.
+            Before pivoting to software engineering in 2021, I was a freelance
+            director of photography and camera operator in television for over
+            twelve years. I was lucky enough to travel the globe filming for
+            numerous networks including AMC, HBOMax, NatGeo and Comedy Central.
           </p>
           <p>
-            In his spare time, Jon can be found playing hockey, attempting the
-            crossword, or going for a family jog with his wife and son. He's
-            been living in Crown Heights since moving to Brooklyn in 2008 and
-            thoroughly enjoys all the adventures that Brooklyn has to offer.
+            When not building out new websites, I can be found playing hockey,
+            doing the crossword or going for a family jog with my wife and son.
+            I’ve been in Crown Heights, Brooklyn since 2008 and love every
+            adventure that New York City has to offer.
           </p>
           <a id="resumeLink" href={resume} target="_blank" rel="noreferrer">
             View Jon's Resume
@@ -40,7 +41,7 @@ const About = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
