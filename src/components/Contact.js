@@ -1,45 +1,43 @@
 import { useState } from "react"
 import { Form, Input, Button, TextArea } from "semantic-ui-react"
-import axios from "axios"
-import { SERVER_URL } from "../util/server_url"
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
   const [userName, setUserName] = useState("")
   const [userEmail, setUserEmail] = useState("")
   const [userSubject, setUserSubject] = useState("")
   const [userMessage, setUserMessage] = useState("")
-  const [emailStatus, setEmailStatus] = useState("")
+  const [emailSent, setEmailSent] = useState(false)
 
   const handleEmailSubmit = (e) => {
     e.preventDefault()
     const newEmail = {
       name: userName,
-      email_address: userEmail,
+      email: userEmail,
       subject: userSubject,
       message: userMessage,
     }
-    axios.post(`${SERVER_URL}/emails`, newEmail).then((resp) => {
-      console.log(resp)
-      if (resp.data.errors) {
-        setEmailStatus(resp.data.errors)
-      } else {
-        setEmailStatus(resp.data.message)
-        setUserName("")
-        setUserEmail("")
-        setUserSubject("")
-        setUserMessage("")
-      }
-    })
+    emailjs.send(
+      "service_epg22qw",
+      "template_fuk8h9j",
+      newEmail,
+      "9N-PltVTHVxDEt0_D"
+    )
+    setUserName("")
+    setUserEmail("")
+    setUserSubject("")
+    setUserMessage("")
+    setEmailSent(true)
   }
 
   return (
     <div id="contactContainer" className="fadeIn">
       <h2>Contact.</h2>
       <div id="contactContent">
-        {emailStatus ? (
-          <p id="emailConfirmation" className="fadeIn">
-            {emailStatus}
-          </p>
+        {emailSent ? (
+          <div id="emailConfirmation" className="fadeIn centered">
+            <p>Thanks for reaching out. I'll get back to you shortly!</p>
+          </div>
         ) : (
           <div>
             <div id="contactBlurb">

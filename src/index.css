@@ -135,7 +135,9 @@ i.icons {
   padding-left: 1px;
   padding-right: 1px;
 }
-
+.centered {
+  text-align: center;
+}
 #welcomeNote {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -284,6 +286,10 @@ i.icons {
 #emailConfirmation {
   font-size: 1.5em;
   padding-top: 15px;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .ui.button {
@@ -539,11 +545,6 @@ a.footerLink {
 
   #contactContent {
     padding: 2em 0;
-  }
-
-  #emailConfirmation {
-    font-size: 1.5em;
-    padding-top: 15px;
   }
 
   .ui.button {
