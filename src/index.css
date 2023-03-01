@@ -299,7 +299,7 @@ i.icons {
   justify-content: center;
   height: 4em;
   bottom: 0;
-  /* position: fixed; */
+  height: 200px;
 }
 
 a.footerLink {
@@ -313,6 +313,20 @@ a.footerLink {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5em;
+  }
+
+  #desktopLinkContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  #footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 4em;
+    bottom: 0;
   }
 }
 
@@ -389,15 +403,12 @@ a.footerLink {
 
   #navContainer {
     display: flex;
+    flex-direction: row;
+    gap: 15px;
     background-color: white;
     height: 5em;
     align-items: center;
     justify-content: flex-end;
-  }
-
-  #desktopLinkContainer {
-    display: flex;
-    align-items: center;
   }
 
   .headerLink {
@@ -456,10 +467,6 @@ a.footerLink {
 
   .carousel .carousel-indicators li.active {
     background-color: black;
-  }
-
-  #aboutHeader {
-    margin: 0 0%;
   }
 
   #aboutContent {
@@ -542,14 +549,6 @@ a.footerLink {
   .ui.button {
     font-family: sofia-pro, sans-serif;
     color: black;
-  }
-
-  #footerContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 4em;
-    bottom: 0;
   }
 
   a.footerLink {

@@ -10,7 +10,8 @@ export const data = [
     title: "Schema Design Website",
     tools: ["devicon-vuejs-plain-wordmark"],
     image: schema,
-    notes: "",
+    notes:
+      "This was a complete redesign of the site, and a move from Webflow to a custom Vue3 build. I built all the components from scratch, with no UI libraries for easy maintenance and complete customization. It is a dynamic site so any content entered in the custom backend is instanteously rendered.",
     link: "https://www.schemadesign.com",
   },
   {
