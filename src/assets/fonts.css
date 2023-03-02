@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Grotesk";
+  src: url("./fonts/Grotesk.otf") format("opentype");
+}
+@font-face {
+  font-family: "Grotesk";
+  src: url("./fonts/Grotesk-Italic.otf") format("opentype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Grotesk Light";
+  src: url("./fonts/Grotesk-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Grotesk Light";
+  src: url("./fonts/Grotesk-Light-Italic.otf") format("opentype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Grotesk Super";
+  src: url("./fonts/Grotesk-Super.otf") format("opentype");
+}
+@font-face {
+  font-family: "Grotesk Super";
+  src: url("./fonts/Grotesk-Super-Italic.otf") format("opentype");
+  font-style: italic;
+}

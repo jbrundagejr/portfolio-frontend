@@ -16,26 +16,20 @@ a {
 }
 
 h1 {
-  font-family: sofia-pro, sans-serif;
-  font-weight: 900;
+  font-family: "Grotesk Super", sans-serif;
   font-style: normal;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 1.2px black;
   font-size: 4em;
 }
 
 h2 {
-  font-family: sofia-pro, sans-serif;
-  font-weight: 900;
+  font-family: "Grotesk", sans-serif;
   font-style: normal;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 1px black;
   font-size: 2em;
 }
 
 h3 {
   font-size: 2em;
-  font-family: sofia-pro, sans-serif;
+  font-family: "Grotesk", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: black;
@@ -43,15 +37,25 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-  font-family: sofia-pro, sans-serif;
+  font-family: "Grotesk", sans-serif;
   font-weight: 700;
 }
 
 p {
-  font-family: sofia-pro, sans-serif;
+  font-family: "Grotesk Light", sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 1.25em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .fadeIn {
@@ -118,17 +122,11 @@ i.icons {
   padding-right: 5px;
   color: black;
   text-decoration: none;
-  font-family: sofia-pro, sans-serif;
+  font-family: Grotesk, sans-serif;
   font-weight: 700;
   font-style: normal;
   display: flex;
   justify-content: flex-start;
-}
-
-.headerLink:hover {
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 0.75px black;
-  text-decoration: none;
 }
 
 #welcomeContainer {
@@ -176,7 +174,7 @@ i.icons {
 }
 
 .modalLink {
-  font-family: sofia-pro, sans-serif;
+  font-family: Grotesk, sans-serif;
   font-weight: 700;
   color: black;
   font-size: 1.5em;
@@ -192,11 +190,8 @@ i.icons {
 }
 
 #modalHeader {
-  font-family: sofia-pro, sans-serif;
-  font-weight: 900;
+  font-family: "Grotesk Super", sans-serif;
   font-style: normal;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 1px black;
   font-size: 2em;
   display: flex;
   justify-content: space-between;
@@ -250,14 +245,14 @@ i.icons {
 }
 
 #resumeLink {
-  font-family: "sofia-pro", sans-serif;
+  font-family: "Grotesk", sans-serif;
   font-weight: 600;
   font-size: 1.25em;
   color: black;
 }
 
 .formLabel {
-  font-family: sofia-pro, sans-serif;
+  font-family: Grotesk, sans-serif;
   font-size: 1.2em;
   padding-top: 10px;
 }
@@ -274,12 +269,12 @@ i.icons {
 .ui.form input[type="text"],
 .ui.form input[type="time"],
 .ui.form input[type="url"] {
-  font-family: sofia-pro, sans-serif;
+  font-family: Grotesk, sans-serif;
   border: 1px solid black;
 }
 
 .ui.form textarea {
-  font-family: sofia-pro, sans-serif;
+  font-family: Grotesk, sans-serif;
   border: 1px solid black;
 }
 
@@ -293,7 +288,7 @@ i.icons {
 }
 
 .ui.button {
-  font-family: sofia-pro, sans-serif;
+  font-family: Grotesk, sans-serif;
   color: black;
   background: white;
   border: 1px solid black;
@@ -339,26 +334,15 @@ a.footerLink {
 /* FOR DESKTOP */
 @media (min-width: 1024px) {
   h1 {
-    font-family: sofia-pro, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 1.2px black;
     font-size: 10em;
   }
 
   h2 {
-    font-family: sofia-pro, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 1px black;
     font-size: 4em;
   }
 
   h3 {
     font-size: 2em;
-    font-family: sofia-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     color: black;
@@ -366,18 +350,14 @@ a.footerLink {
 
   h3:hover {
     cursor: pointer;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 1px black;
   }
 
   h4 {
     font-size: 2em;
-    font-family: sofia-pro, sans-serif;
     font-weight: 700;
   }
 
   p {
-    font-family: sofia-pro, sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 1.25em;
@@ -424,15 +404,9 @@ a.footerLink {
     padding-right: 5px;
     color: black;
     text-decoration: none;
-    font-family: sofia-pro, sans-serif;
+    font-family: "Grotesk", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-
-  .headerLink:hover {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 0.75px black;
-    text-decoration: none;
   }
 
   #welcomeNote {
@@ -502,16 +476,10 @@ a.footerLink {
   }
 
   #resumeLink {
-    font-family: "sofia-pro", sans-serif;
+    font-family: "Grotesk", sans-serif;
     font-weight: 600;
     font-size: 1.25em;
     color: black;
-  }
-
-  #resumeLink:hover {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 0.75px black;
-    text-decoration: none;
   }
 
   #contactHeader {
@@ -519,7 +487,7 @@ a.footerLink {
   }
 
   .formLabel {
-    font-family: sofia-pro, sans-serif;
+    font-family: Grotesk, sans-serif;
     font-size: 1.2em;
     padding-top: 10px;
   }
@@ -536,7 +504,7 @@ a.footerLink {
   .ui.form input[type="text"],
   .ui.form input[type="time"],
   .ui.form input[type="url"] {
-    font-family: sofia-pro, sans-serif;
+    font-family: Grotesk, sans-serif;
   }
 
   #contactBlurb {
@@ -548,7 +516,7 @@ a.footerLink {
   }
 
   .ui.button {
-    font-family: sofia-pro, sans-serif;
+    font-family: Grotesk, sans-serif;
     color: black;
   }
 
@@ -572,8 +540,7 @@ a.footerLink {
   }
 
   .modalLink {
-    font-family: sofia-pro, sans-serif;
-    font-weight: 700;
+    font-family: "Grotesk", sans-serif;
     color: black;
     font-size: 1.5em;
     text-decoration: none;
@@ -582,8 +549,6 @@ a.footerLink {
   }
 
   .modalLink:hover {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 0.75px black;
     text-decoration: none;
   }
 
