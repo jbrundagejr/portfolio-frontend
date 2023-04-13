@@ -46,11 +46,11 @@ export const data = [
     notes: "",
     link: "https://asiasociety.org/policy-institute/decoding-chinas-20th-party-congress",
   },
-  {
-    title: "Bloomberg NEF 2022",
-    tools: ["devicon-threejs-original", "devicon-d3js-plain"],
-    image: bloomberg,
-    notes: "",
-    link: "",
-  },
+  // {
+  //   title: "Bloomberg NEF 2022",
+  //   tools: ["devicon-threejs-original", "devicon-d3js-plain"],
+  //   image: bloomberg,
+  //   notes: "",
+  //   link: "",
+  // },
 ]
