@@ -1,4 +1,4 @@
 export const SERVER_URL = 
   process.env.NODE_ENV === "production" 
-    ? "https://mighty-fjord-51024.herokuapp.com"
+    ? "https://phase5-backend-development.onrender.com"
     : "http://localhost:3000"
