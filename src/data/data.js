@@ -3,7 +3,7 @@ import mckinsey from "../assets/images/mckinsey.png"
 import sedus from "../assets/images/sedus.png"
 import pefa from "../assets/images/pefa.png"
 import aspi from "../assets/images/aspi.png"
-// import bloomberg from "../assets/images/bloomberg.png"
+import bloomberg from "../assets/images/bloomberg.png"
 
 export const data = [
 	{
@@ -46,11 +46,11 @@ export const data = [
 		notes: "",
 		link: "https://asiasociety.org/policy-institute/decoding-chinas-20th-party-congress",
 	},
-	// {
-	//   title: "Bloomberg NEF 2022",
-	//   tools: ["devicon-threejs-original", "devicon-d3js-plain"],
-	//   image: bloomberg,
-	//   notes: "",
-	//   link: "",
-	// },
+	{
+		title: "Bloomberg NEF 2022",
+		tools: ["devicon-threejs-original", "devicon-d3js-plain"],
+		image: bloomberg,
+		notes: "",
+		link: "",
+	},
 ]
