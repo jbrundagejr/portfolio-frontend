@@ -3,7 +3,7 @@ import mckinsey from "../assets/images/mckinsey.png"
 import sedus from "../assets/images/sedus.png"
 import pefa from "../assets/images/pefa.png"
 import aspi from "../assets/images/aspi.png"
-import bloomberg from "../assets/images/bloomberg.png"
+// import bloomberg from "../assets/images/bloomberg.png"
 
 export const data = [
 	{
