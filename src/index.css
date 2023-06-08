@@ -9,252 +9,252 @@ h5,
 h6,
 p,
 a {
-  margin: 0;
+	margin: 0;
 }
 #appContainer {
-  padding: 0 3em;
+	padding: 0 3em;
 }
 
 h1 {
-  font-family: "Grotesk Super", sans-serif;
-  font-style: normal;
-  font-size: 4em;
+	font-family: "Grotesk", sans-serif;
+	font-style: normal;
+	font-size: 4em;
 }
 
 h2 {
-  font-family: "Grotesk", sans-serif;
-  font-style: normal;
-  font-size: 2em;
+	font-family: "Grotesk", sans-serif;
+	font-style: normal;
+	font-size: 2em;
 }
 
 h3 {
-  font-size: 2em;
-  font-family: "Grotesk", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: black;
+	font-size: 2em;
+	font-family: "Grotesk", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: black;
 }
 
 h4 {
-  font-size: 1.5em;
-  font-family: "Grotesk", sans-serif;
-  font-weight: 700;
+	font-size: 1.5em;
+	font-family: "Grotesk", sans-serif;
+	font-weight: 700;
 }
 
 p {
-  font-family: "Grotesk Light", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 1.25em;
+	font-family: "Grotesk Light", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 1.25em;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 a:hover {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .fadeIn {
-  min-width: 60%;
-  min-height: 400px;
-  animation: fadein 350ms;
-  -moz-animation: fadein 350ms; /* Firefox */
-  -webkit-animation: fadein 350ms; /* Safari and Chrome */
-  -o-animation: fadein 350ms; /* Opera */
+	min-width: 60%;
+	min-height: 400px;
+	animation: fadein 350ms;
+	-moz-animation: fadein 350ms; /* Firefox */
+	-webkit-animation: fadein 350ms; /* Safari and Chrome */
+	-o-animation: fadein 350ms; /* Opera */
 }
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	/* Firefox */
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	/* Safari and Chrome */
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	/* Opera */
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 #navContainer {
-  display: flex;
-  background-color: white;
-  height: 5em;
-  align-items: center;
-  justify-content: flex-end;
+	display: flex;
+	background-color: white;
+	height: 5em;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 i.icon,
 i.icons {
-  font-size: 2em;
+	font-size: 2em;
 }
 
 .headerLink {
-  font-size: 1.5em;
-  font-style: bold;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: black;
-  text-decoration: none;
-  font-family: Grotesk, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  display: flex;
-  justify-content: flex-start;
+	font-size: 1.5em;
+	font-style: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: black;
+	text-decoration: none;
+	font-family: Grotesk, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	display: flex;
+	justify-content: flex-start;
 }
 
 #welcomeContainer {
-  padding-left: 1px;
-  padding-right: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 .centered {
-  text-align: center;
+	text-align: center;
 }
 #welcomeNote {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  font-size: 1.5em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-size: 1.5em;
 }
 
 #carouselContainer {
-  padding-top: 1em;
-  padding-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 .carousel-caption {
-  position: relative;
-  left: auto;
-  right: auto;
-  padding-top: 25px;
+	position: relative;
+	left: auto;
+	right: auto;
+	padding-top: 25px;
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-  display: none;
+	display: none;
 }
 
 .carousel .carousel-indicators li {
-  background-color: rgb(119, 118, 118);
+	background-color: rgb(119, 118, 118);
 }
 
 .carousel .carousel-indicators li.active {
-  background-color: black;
+	background-color: black;
 }
 
 .ui.modal {
-  position: relative;
-  height: auto;
-  width: 90%;
+	position: relative;
+	height: auto;
+	width: 90%;
 }
 
 .modalLink {
-  font-family: Grotesk, sans-serif;
-  font-weight: 700;
-  color: black;
-  font-size: 1.5em;
-  text-decoration: none;
-  padding-right: 10px;
-  padding-top: 15px;
+	font-family: Grotesk, sans-serif;
+	font-weight: 700;
+	color: black;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding-right: 10px;
+	padding-top: 15px;
 }
 
 .modalLink:hover {
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 0.75px black;
-  text-decoration: none;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke: 0.75px black;
+	text-decoration: none;
 }
 
 #modalHeader {
-  font-family: "Grotesk Super", sans-serif;
-  font-style: normal;
-  font-size: 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	font-family: "Grotesk Super", sans-serif;
+	font-style: normal;
+	font-size: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #modalLinkContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 
 #devIcon {
-  font-size: 3em;
-  padding-right: 10px;
+	font-size: 3em;
+	padding-right: 10px;
 }
 
 #aboutHeader {
-  padding: 0 0 1em;
+	padding: 0 0 1em;
 }
 
 #aboutContent {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 #aboutLinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: black;
 }
 
 #bioBlurb {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 #bioPhoto img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1;
-  object-fit: contain;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	object-fit: contain;
 }
 
 .bioLink {
-  padding: 10px;
-  color: black;
-  padding-top: 10px;
+	padding: 10px;
+	color: black;
+	padding-top: 10px;
 }
 
 #resumeLink {
-  font-family: "Grotesk", sans-serif;
-  font-weight: 600;
-  font-size: 1.25em;
-  color: black;
+	font-family: "Grotesk", sans-serif;
+	font-weight: 600;
+	font-size: 1.25em;
+	color: black;
 }
 
 .formLabel {
-  font-family: Grotesk, sans-serif;
-  font-size: 1.2em;
-  padding-top: 10px;
+	font-family: Grotesk, sans-serif;
+	font-size: 1.2em;
+	padding-top: 10px;
 }
 
 .ui.form input:not([type]),
@@ -269,304 +269,304 @@ i.icons {
 .ui.form input[type="text"],
 .ui.form input[type="time"],
 .ui.form input[type="url"] {
-  font-family: Grotesk, sans-serif;
-  border: 1px solid black;
+	font-family: Grotesk, sans-serif;
+	border: 1px solid black;
 }
 
 .ui.form textarea {
-  font-family: Grotesk, sans-serif;
-  border: 1px solid black;
+	font-family: Grotesk, sans-serif;
+	border: 1px solid black;
 }
 
 #emailConfirmation {
-  font-size: 1.5em;
-  padding-top: 15px;
-  display: flex;
-  height: 300px;
-  justify-content: center;
-  align-items: center;
+	font-size: 1.5em;
+	padding-top: 15px;
+	display: flex;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
 }
 
 .ui.button {
-  font-family: Grotesk, sans-serif;
-  color: black;
-  background: white;
-  border: 1px solid black;
+	font-family: Grotesk, sans-serif;
+	color: black;
+	background: white;
+	border: 1px solid black;
 }
 
 #footerContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 4em;
-  bottom: 0;
-  height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 4em;
+	bottom: 0;
+	height: 200px;
 }
 
 a.footerLink {
-  color: black;
+	color: black;
 }
 
 /* FOR TABLET */
 
 @media (min-width: 768px) {
-  #aboutContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5em;
-  }
+	#aboutContent {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5em;
+	}
 
-  #desktopLinkContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
+	#desktopLinkContainer {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+	}
 
-  #footerContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 4em;
-    bottom: 0;
-  }
+	#footerContainer {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		height: 4em;
+		bottom: 0;
+	}
 }
 
 /* FOR DESKTOP */
 @media (min-width: 1024px) {
-  h1 {
-    font-size: 10em;
-  }
+	h1 {
+		font-size: 10em;
+	}
 
-  h2 {
-    font-size: 4em;
-  }
+	h2 {
+		font-size: 4em;
+	}
 
-  h3 {
-    font-size: 2em;
-    font-weight: 700;
-    font-style: normal;
-    color: black;
-  }
+	h3 {
+		font-size: 2em;
+		font-weight: 700;
+		font-style: normal;
+		color: black;
+	}
 
-  h3:hover {
-    cursor: pointer;
-  }
+	h3:hover {
+		cursor: pointer;
+	}
 
-  h4 {
-    font-size: 2em;
-    font-weight: 700;
-  }
+	h4 {
+		font-size: 2em;
+		font-weight: 700;
+	}
 
-  p {
-    font-weight: 200;
-    font-style: normal;
-    font-size: 1.25em;
-  }
+	p {
+		font-weight: 200;
+		font-style: normal;
+		font-size: 1.25em;
+	}
 
-  .fadeIn {
-    min-width: 60%;
-    min-height: 400px;
-    animation: fadein 350ms;
-    -moz-animation: fadein 350ms; /* Firefox */
-    -webkit-animation: fadein 350ms; /* Safari and Chrome */
-    -o-animation: fadein 350ms; /* Opera */
-  }
+	.fadeIn {
+		min-width: 60%;
+		min-height: 400px;
+		animation: fadein 350ms;
+		-moz-animation: fadein 350ms; /* Firefox */
+		-webkit-animation: fadein 350ms; /* Safari and Chrome */
+		-o-animation: fadein 350ms; /* Opera */
+	}
 
-  .modal {
-    max-width: 880px;
-  }
+	.modal {
+		max-width: 880px;
+	}
 
-  .modalImage {
-    aspect-ratio: 16 / 9;
-    object-fit: contain;
-    max-height: 60vh;
-  }
+	.modalImage {
+		aspect-ratio: 16 / 9;
+		object-fit: contain;
+		max-height: 60vh;
+	}
 
-  i.icon,
-  i.icons {
-    font-size: 2em;
-  }
+	i.icon,
+	i.icons {
+		font-size: 2em;
+	}
 
-  #navContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    background-color: white;
-    height: 5em;
-    align-items: center;
-    justify-content: flex-end;
-  }
+	#navContainer {
+		display: flex;
+		flex-direction: row;
+		gap: 15px;
+		background-color: white;
+		height: 5em;
+		align-items: center;
+		justify-content: flex-end;
+	}
 
-  .headerLink {
-    font-size: 1.5em;
-    font-style: bold;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: black;
-    text-decoration: none;
-    font-family: "Grotesk", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
+	.headerLink {
+		font-size: 1.5em;
+		font-style: bold;
+		padding-left: 5px;
+		padding-right: 5px;
+		color: black;
+		text-decoration: none;
+		font-family: "Grotesk", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+	}
 
-  #welcomeNote {
-    padding-top: 4em;
-    padding-bottom: 4em;
-    font-size: 1.5em;
-  }
+	#welcomeNote {
+		padding-top: 4em;
+		padding-bottom: 4em;
+		font-size: 1.5em;
+	}
 
-  #welcomeNav {
-    display: flex;
-    flex-direction: column;
-    border-top: thin black;
-  }
+	#welcomeNav {
+		display: flex;
+		flex-direction: column;
+		border-top: thin black;
+	}
 
-  #projectHeader {
-    margin: 0 0%;
-  }
+	#projectHeader {
+		margin: 0 0%;
+	}
 
-  #carouselContainer {
-    padding-top: 2em;
-  }
+	#carouselContainer {
+		padding-top: 2em;
+	}
 
-  .carousel-caption {
-    position: relative;
-    left: auto;
-    right: auto;
-    padding-top: 25px;
-  }
+	.carousel-caption {
+		position: relative;
+		left: auto;
+		right: auto;
+		padding-top: 25px;
+	}
 
-  .carousel-control-next,
-  .carousel-control-prev {
-    display: flex;
-  }
+	.carousel-control-next,
+	.carousel-control-prev {
+		display: flex;
+	}
 
-  .carousel .carousel-indicators li {
-    background-color: rgb(119, 118, 118);
-  }
+	.carousel .carousel-indicators li {
+		background-color: rgb(119, 118, 118);
+	}
 
-  .carousel .carousel-indicators li.active {
-    background-color: black;
-  }
+	.carousel .carousel-indicators li.active {
+		background-color: black;
+	}
 
-  #aboutContent {
-    padding: 2em 0;
-  }
+	#aboutContent {
+		padding: 2em 0;
+	}
 
-  #aboutLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: black;
-  }
+	#aboutLinks {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		color: black;
+	}
 
-  .bioLink {
-    padding: 10px;
-    color: black;
-    padding-top: 10px;
-  }
+	.bioLink {
+		padding: 10px;
+		color: black;
+		padding-top: 10px;
+	}
 
-  .bioLink:hover {
-    text-decoration: none;
-    color: rgb(9, 155, 130);
-  }
+	.bioLink:hover {
+		text-decoration: none;
+		color: rgb(9, 155, 130);
+	}
 
-  #bioPhoto img {
-    max-width: 500px;
-  }
+	#bioPhoto img {
+		max-width: 500px;
+	}
 
-  #resumeLink {
-    font-family: "Grotesk", sans-serif;
-    font-weight: 600;
-    font-size: 1.25em;
-    color: black;
-  }
+	#resumeLink {
+		font-family: "Grotesk", sans-serif;
+		font-weight: 600;
+		font-size: 1.25em;
+		color: black;
+	}
 
-  #contactHeader {
-    margin: 0 0%;
-  }
+	#contactHeader {
+		margin: 0 0%;
+	}
 
-  .formLabel {
-    font-family: Grotesk, sans-serif;
-    font-size: 1.2em;
-    padding-top: 10px;
-  }
+	.formLabel {
+		font-family: Grotesk, sans-serif;
+		font-size: 1.2em;
+		padding-top: 10px;
+	}
 
-  .ui.form input:not([type]),
-  .ui.form input[type="date"],
-  .ui.form input[type="datetime-local"],
-  .ui.form input[type="email"],
-  .ui.form input[type="file"],
-  .ui.form input[type="number"],
-  .ui.form input[type="password"],
-  .ui.form input[type="search"],
-  .ui.form input[type="tel"],
-  .ui.form input[type="text"],
-  .ui.form input[type="time"],
-  .ui.form input[type="url"] {
-    font-family: Grotesk, sans-serif;
-  }
+	.ui.form input:not([type]),
+	.ui.form input[type="date"],
+	.ui.form input[type="datetime-local"],
+	.ui.form input[type="email"],
+	.ui.form input[type="file"],
+	.ui.form input[type="number"],
+	.ui.form input[type="password"],
+	.ui.form input[type="search"],
+	.ui.form input[type="tel"],
+	.ui.form input[type="text"],
+	.ui.form input[type="time"],
+	.ui.form input[type="url"] {
+		font-family: Grotesk, sans-serif;
+	}
 
-  #contactBlurb {
-    font-size: 1.5em;
-  }
+	#contactBlurb {
+		font-size: 1.5em;
+	}
 
-  #contactContent {
-    padding: 2em 0;
-  }
+	#contactContent {
+		padding: 2em 0;
+	}
 
-  .ui.button {
-    font-family: Grotesk, sans-serif;
-    color: black;
-  }
+	.ui.button {
+		font-family: Grotesk, sans-serif;
+		color: black;
+	}
 
-  a.footerLink {
-    color: black;
-  }
+	a.footerLink {
+		color: black;
+	}
 
-  a.footerLink:hover {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 0.75px black;
-    text-decoration: none;
-  }
+	a.footerLink:hover {
+		-webkit-text-fill-color: white;
+		-webkit-text-stroke: 0.75px black;
+		text-decoration: none;
+	}
 
-  .ui.modal {
-    position: static;
-    height: auto;
-  }
+	.ui.modal {
+		position: static;
+		height: auto;
+	}
 
-  #modalCloseIcon:hover {
-    cursor: pointer;
-  }
+	#modalCloseIcon:hover {
+		cursor: pointer;
+	}
 
-  .modalLink {
-    font-family: "Grotesk", sans-serif;
-    color: black;
-    font-size: 1.5em;
-    text-decoration: none;
-    padding-right: 10px;
-    padding-top: 15px;
-  }
+	.modalLink {
+		font-family: "Grotesk", sans-serif;
+		color: black;
+		font-size: 1.5em;
+		text-decoration: none;
+		padding-right: 10px;
+		padding-top: 15px;
+	}
 
-  .modalLink:hover {
-    text-decoration: none;
-  }
+	.modalLink:hover {
+		text-decoration: none;
+	}
 
-  #modalLinkContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
+	#modalLinkContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
 
-  #devIcon {
-    font-size: 3em;
-    padding-right: 10px;
-  }
+	#devIcon {
+		font-size: 3em;
+		padding-right: 10px;
+	}
 }
 
 @media (min-width: 1440px) {
-  #appContainer {
-    width: 1440px;
-    margin: 0 auto;
-  }
+	#appContainer {
+		width: 1440px;
+		margin: 0 auto;
+	}
 }
