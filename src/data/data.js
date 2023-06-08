@@ -1,5 +1,5 @@
 import schema from "../assets/images/schema.png"
-import mckinsey from "../assets/images/mckinsey.png"
+// import mckinsey from "../assets/images/mckinsey.png"
 import sedus from "../assets/images/sedus.png"
 import pefa from "../assets/images/pefa.png"
 import aspi from "../assets/images/aspi.png"
@@ -14,13 +14,13 @@ export const data = [
 			"This was a complete redesign of the site, and a move from Webflow to a custom Vue3 build. I built all the components from scratch, with no UI libraries for easy maintenance and complete customization. It is a dynamic site so any content entered in the custom backend is instanteously rendered.",
 		link: "https://www.schemadesign.com",
 	},
-	{
-		title: "McKinsey Leap Executive Guide",
-		tools: ["devicon-vuejs-plain-wordmark"],
-		image: mckinsey,
-		notes: "",
-		link: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-executives-guide-to-new-business-building",
-	},
+	// {
+	// 	title: "McKinsey Leap Executive Guide",
+	// 	tools: ["devicon-vuejs-plain-wordmark"],
+	// 	image: mckinsey,
+	// 	notes: "",
+	// 	link: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-executives-guide-to-new-business-building",
+	// },
 	{
 		title: "Sedus Workscape of Tomorrow",
 		tools: ["devicon-nuxtjs-plain-wordmark"],
